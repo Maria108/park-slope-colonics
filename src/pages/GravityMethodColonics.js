@@ -15,7 +15,7 @@ const GravityMethodColonics = () => {
     <main className="text-customDarkGreen">
       {/* First Section */}
       <section className="h-[70vh] mb-20">
-        <div className="grid grid-cols-2 h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 h-full">
           {/* Left Background Image with Overlay */}
           <div
             className="bg-cover bg-center relative"
@@ -24,12 +24,12 @@ const GravityMethodColonics = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="absolute inset-0 bg-customPink bg-opacity-70 flex items-center justify-center p-8 text-customDarkGreen">
+            <div className="absolute inset-0 bg-customPink bg-opacity-70 flex items-center justify-center p-4 sm:p-8 text-customDarkGreen">
               <div className="max-w-md">
-                <h2 className="text-3xl font-bold text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold text-center">
                   Gravity Method Colonics
                 </h2>
-                <p className="mt-4 text-justify indent-5">
+                <p className="mt-4 text-justify indent-5 text-sm sm:text-base">
                   A colonic is a thorough cleansing of the colon (large
                   intestine) using warm purified water. The Gravity Method,
                   employed in my private practice, ensures a comfortable and
@@ -59,11 +59,11 @@ const GravityMethodColonics = () => {
       </section>
 
       {/* Second Section */}
-      <section className="my-20 px-8">
-        <h2 className="text-3xl font-bold mb-12 text-center">
+      <section className="my-20 px-4 sm:px-8">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">
           How Do You Know It's Time for a Colonic
         </h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {[
             {
               title: "Fatigue",
@@ -100,10 +100,7 @@ const GravityMethodColonics = () => {
             {
               title: "Feeling Heavy/Sluggish",
               icon: (
-                <FaHippo
-                  FaRegMehRollingEyes
-                  className="inline-block mx-2 text-customDarkGreen text-3xl"
-                />
+                <FaHippo className="inline-block mx-2 text-customDarkGreen text-3xl" />
               ),
               description:
                 "Feeling sluggish, frequently battling colds, flu, or allergies, and experiencing cravings for sugary foods are signs that your body may benefit from a cleanse or detox. Colon hydrotherapy offers an effective starting point. Many clients report feeling lighter, more energized, less bloated, with an uplifted and happier demeanor after just one session or a series of treatments.",
@@ -119,12 +116,14 @@ const GravityMethodColonics = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="p-6 bg-customBeige rounded-md shadow-lg"
+              className="p-4 sm:p-6 bg-customBeige rounded-md shadow-lg"
             >
-              <h3 className="text-xl font-semibold mb-4 text-center flex items-center justify-center">
+              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center flex items-center justify-center">
                 {item.title} {item.icon}
               </h3>
-              <p className="text-justify">{item.description}</p>
+              <p className="text-justify text-sm sm:text-base">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>

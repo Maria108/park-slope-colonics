@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
     <div className="flex flex-col min-h-screen">
       {/* NavBar */}
       <header className="bg-white text-customDarkBlue font-comfortaa border-b-2 border-customBlue">
-        <nav className="container mx-auto flex justify-between items-center py-6">
+        <nav className="container mx-auto flex justify-between items-center p-6">
           {/* Left: Dynamic Site Title */}
           <div className="flex items-center">
             <img

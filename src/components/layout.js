@@ -1,15 +1,7 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
-
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import React, { useState } from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Footer from "./Footer"
+import logoImg from "../images/logo1.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -22,29 +14,111 @@ const Layout = ({ children }) => {
     }
   `)
 
+  // State to control hamburger menu visibility
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  // Toggle the menu open/closed
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <div className="flex flex-col min-h-screen">
+      {/* NavBar */}
+      <header className="bg-white text-customDarkBlue font-comfortaa border-b-2 border-customBlue">
+        <nav className="container mx-auto flex justify-between items-center py-6">
+          {/* Left: Dynamic Site Title */}
+          <div className="flex items-center">
+            <img
+              src={logoImg}
+              alt="Site Logo"
+              className="h-8 mr-4" // Adjust size as needed
+            />
+            <h1 className="text-2xl font-bold text-customBlue">
+              <Link to="/">{data.site.siteMetadata.title}</Link>
+            </h1>
+          </div>
+
+          {/* Right: Nav Links for Large Screens */}
+          <div className="hidden md:flex space-x-4">
+            <Link to="/" className="hover:text-gray-400">
+              Home
+            </Link>
+            <Link to="/gravity-method" className="hover:text-gray-400">
+              Gravity Method Colonics
+            </Link>
+            <Link to="/faq-pricing" className="hover:text-gray-400">
+              FAQ & Pricing
+            </Link>
+            <Link to="/blog" className="hover:text-gray-400">
+              Blog
+            </Link>
+            <Link to="/contact" className="hover:text-gray-400">
+              Contact
+            </Link>
+          </div>
+
+          {/* Hamburger Icon for Small Screens */}
+          <div className="md:hidden flex items-center" onClick={toggleMenu}>
+            <button className="text-customBlue focus:outline-none">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="h-6 w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white shadow-lg">
+            <div className="space-y-4 py-4">
+              <Link to="/" className="block text-center hover:text-gray-400">
+                Home
+              </Link>
+              <Link
+                to="/gravity-method"
+                className="block text-center hover:text-gray-400"
+              >
+                Gravity Method Colonics
+              </Link>
+              <Link
+                to="/faq-pricing"
+                className="block text-center hover:text-gray-400"
+              >
+                FAQ & Pricing
+              </Link>
+              <Link
+                to="/blog"
+                className="block text-center hover:text-gray-400"
+              >
+                Blog
+              </Link>
+              <Link
+                to="/contact"
+                className="block text-center hover:text-gray-400"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
+        )}
+      </header>
+
+      {/* Main Content */}
+      <main className="flex-grow font-comfortaa">{children}</main>
+
+      {/* Footer */}
+      <Footer />
+    </div>
   )
 }
 

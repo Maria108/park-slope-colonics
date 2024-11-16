@@ -23,7 +23,7 @@ const HomePage = () => (
         href="https://square-link"
         target="_blank"
         rel="noopener noreferrer"
-        className="relative z-10 bg-white text-black px-6 py-3 text-lg rounded-md hover:bg-customBeige"
+        className="relative z-10 bg-white text-customDarkGreen px-6 py-3 text-lg rounded-md hover:bg-customBeige"
       >
         Book an Appointment
       </a>
@@ -122,43 +122,44 @@ const HomePage = () => (
     </section>
 
     {/* Section 3: Meet Your Therapist */}
-    <section className="my-20 h-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 h-full">
+    <section className="my-20">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left Background Image */}
         <div
-          className="bg-cover bg-center h-[70vh]"
+          className="bg-cover bg-center h-full min-h-[70vh]"
           style={{
             backgroundImage: `url(${lenaImage})`,
-            backgroundRepeat: "no-repeat",
           }}
         ></div>
-        {/* Right Background Image with Text Overlay */}
+
+        {/* Right Image with Text Overlay */}
         <div
-          className="bg-cover bg-center h-[70vh]"
+          className="bg-cover bg-center flex items-center justify-center relative min-h-[70vh]"
           style={{
             backgroundImage: `url(${lena4Image})`,
-            backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="bg-customPink bg-opacity-70 text-customDarkGreen p-8 flex flex-col items-center justify-center h-full">
-            <h2 className="text-3xl font-bold text-left">
-              Meet Your Therapist
-            </h2>
-            <p className="mt-4 text-justify">
-              Elena Bykova is a certified colon hydrotherapist, a certified
-              holistic nutritionist, and the founder of Park Slope Colonics.
-              Elena’s journey began in her early twenties when she started
-              working at a colonic center and witnessed firsthand the remarkable
-              transformations clients achieved with gravity-method colonics.
-              This experience inspired her to become certified and dedicate
-              herself to the practice of colon hygiene, both for herself and for
-              her clients. Since becoming a therapist in 2014, Elena has
-              performed over 1,000 colonics annually, helping clients reach
-              optimal digestive health. She is deeply passionate about the role
-              of digestive health in overall well-being and sees the tremendous
-              impact colonics can have on enhancing the digestive system and
-              promoting lasting health.
-            </p>
+          <div className="absolute inset-0 bg-customPink bg-opacity-70 flex items-center justify-center p-6 sm:p-8">
+            <div className="max-w-full px-4 sm:px-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-center">
+                Meet Your Therapist
+              </h2>
+              <p className="mt-4 text-sm sm:text-base text-justify">
+                Elena Bykova is a certified colon hydrotherapist, a certified
+                holistic nutritionist, and the founder of Park Slope Colonics.
+                Elena’s journey began in her early twenties when she started
+                working at a colonic center and witnessed firsthand the
+                remarkable transformations clients achieved with gravity-method
+                colonics. This experience inspired her to become certified and
+                dedicate herself to the practice of colon hygiene, both for
+                herself and for her clients. Since becoming a therapist in 2014,
+                Elena has performed over 1,000 colonics annually, helping
+                clients reach optimal digestive health. She is deeply passionate
+                about the role of digestive health in overall well-being and
+                sees the tremendous impact colonics can have on enhancing the
+                digestive system and promoting lasting health.
+              </p>
+            </div>
           </div>
         </div>
       </div>

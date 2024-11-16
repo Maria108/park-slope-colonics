@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Footer = () => (
-  <footer className="text-customDarkBlue bg-gradient-to-b from-white to-customBeige py-12 px-6 font-comfortaa border-t-2 border-customBlue">
+  <footer className="text-customDarkBlue bg-gradient-to-b from-white to-customLigtBlue py-12 px-6 font-comfortaa border-t-2 border-customBlue">
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Column 1: Contact Info */}
       <div>
@@ -31,7 +31,7 @@ const Footer = () => (
               type="text"
               name="name"
               placeholder="Your Name"
-              className="w-full p-2 bg-customBeige text-white rounded-md"
+              className="w-full p-2 bg-white text-customDarkBlue rounded-md"
               required
             />
           </div>
@@ -40,7 +40,7 @@ const Footer = () => (
               type="email"
               name="email"
               placeholder="Your Email"
-              className="w-full p-2 bg-customBeige text-white rounded-md"
+              className="w-full p-2 bg-white text-customDarkBlue rounded-md"
               required
             />
           </div>
@@ -48,14 +48,14 @@ const Footer = () => (
             <textarea
               name="message"
               placeholder="Your Message"
-              className="w-full p-2 bg-customBeige text-white rounded-md"
+              className="w-full p-2 bg-white text-customDarkBlue rounded-md"
               rows="4"
               required
             ></textarea>
           </div>
           <button
             type="submit"
-            className="bg-customGreen text-white px-4 py-2 rounded-md hover:bg-customDarkGreen"
+            className="bg-white text-customDarkBlue px-4 py-2 rounded-md hover:bg-customBeige"
           >
             Send
           </button>

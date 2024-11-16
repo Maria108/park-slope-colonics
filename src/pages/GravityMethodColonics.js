@@ -14,19 +14,18 @@ const GravityMethodColonics = () => {
   return (
     <main className="text-customDarkGreen">
       {/* First Section */}
-      <section className="h-[70vh] mb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 h-full">
-          {/* Left Background Image with Overlay */}
+      <section className="mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          {/* Left Background Image with Text Overlay */}
           <div
-            className="bg-cover bg-center relative"
+            className="bg-cover bg-center h-full min-h-[70vh]"
             style={{
               backgroundImage: `url(${lena6Image})`,
-              backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="absolute inset-0 bg-customPink bg-opacity-70 flex items-center justify-center p-4 sm:p-8 text-customDarkGreen">
-              <div className="max-w-md">
-                <h2 className="text-2xl sm:text-3xl font-bold text-center">
+            <div className="bg-customPink bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
+              <div className="max-w-md text-center">
+                <h2 className="text-2xl sm:text-3xl font-bold">
                   Gravity Method Colonics
                 </h2>
                 <p className="mt-4 text-justify indent-5 text-sm sm:text-base">
@@ -49,10 +48,9 @@ const GravityMethodColonics = () => {
 
           {/* Right Background Image */}
           <div
-            className="bg-cover bg-center"
+            className="bg-cover bg-center h-full min-h-[70vh]"
             style={{
               backgroundImage: `url(${lena1Image})`,
-              backgroundRepeat: "no-repeat",
             }}
           ></div>
         </div>

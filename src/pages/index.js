@@ -19,30 +19,30 @@ const HomePage = () => (
 
       {/* Right Section - Slogan */}
       <div className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-center text-center p-6 sm:p-12">
-        <h1 className="text-3xl sm:text-4xl font-bold sm:text-customDarkGreen text-white">
+        <h1 className="text-2xl sm:text-4xl font-bold text-customDarkGreen">
           Let go of what weighs you down <br /> with Park Slope Colonics
         </h1>
       </div>
 
       {/* Left Section - Text */}
-      <div className="relative z-10 min-h-[70vh] w-full sm:w-1/3 order-2 sm:order-1 bg-white bg-opacity-70 text-customDarkGreen p-6 sm:p-10 flex flex-col justify-center items-center">
-        <h2 className="text-xl font-bold mb-6 text-center">
-          Gravity Colon Hydrotherapy Session
+      <div className="relative z-10 min-h-[70vh] w-full sm:w-1/3 order-2 sm:order-1 bg-white bg-opacity-70 text-customDarkGreen px-6 flex flex-col justify-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">
+          Gravity Colon Hydrotherapy
         </h2>
-        <p className="text-lg text-gray-700 mb-4 text-justify indent-5">
+        <p className="text-lg mb-4 text-left">
           Discover a gentle yet powerful way to support your body’s natural
           detoxification and digestive health. Colon hydrotherapy isn’t just
           about cleansing—it’s about restoring balance, easing discomfort, and
           helping you feel your best from the inside out.
         </p>
-        <p className="text-xl font-bold mb-6 text-center">
+        <p className="text-lg my-6 font-bold self-left">
           One Colonic Session (45-60 mins) - $150
         </p>
         <a
           href="https://square-link"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-customDarkGreen px-6 py-3 text-lg rounded-md hover:bg-customBeige"
+          className="bg-white text-customDarkGreen px-6 py-3 text-lg rounded-md hover:bg-customBeige inline-block self-center my-4"
         >
           Book an Appointment
         </a>
@@ -50,7 +50,7 @@ const HomePage = () => (
     </section>
 
     <section className="my-20 px-8 max-w-6xl mx-auto text-customDarkGreen">
-      <h2 className="text-3xl font-bold text-center mb-12">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
         What Will You Get Out of the Treatment
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
@@ -160,12 +160,12 @@ const HomePage = () => (
             backgroundImage: `url(${lena4Image})`,
           }}
         >
-          <div className="absolute inset-0 bg-customPink bg-opacity-70 flex items-center justify-center p-6 sm:p-8">
+          <div className="absolute inset-0 bg-customPink bg-opacity-70 text-customDarkGreen flex items-center justify-center p-6 sm:p-8">
             <div className="max-w-full px-4 sm:px-6">
               <h2 className="text-2xl sm:text-3xl font-bold text-center">
                 Meet Your Therapist
               </h2>
-              <p className="mt-4 text-sm sm:text-base text-justify">
+              <p className="mt-4 text-sm sm:text-base text-left">
                 Elena Bykova is a certified colon hydrotherapist, a certified
                 holistic nutritionist, and the founder of Park Slope Colonics.
                 Elena’s journey began in her early twenties when she started
@@ -188,7 +188,7 @@ const HomePage = () => (
 
     {/* Section 4: What Clients Are Saying */}
     <section className="h-auto my-20 px-8 text-customDarkGreen">
-      <h2 className="text-3xl font-bold text-center mb-12">
+      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
         What Clients Are Saying
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 overflow-y-auto max-h-[60vh]">

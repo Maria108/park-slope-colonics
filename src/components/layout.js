@@ -88,22 +88,22 @@ const Layout = ({ children }) => {
                 to="/gravity-method"
                 className="block text-center hover:text-gray-400"
               >
-                Gravity Method Colonics
+                Details
               </Link>
               <Link
-                to="/faq-pricing"
+                to="/pricing-page"
                 className="block text-center hover:text-gray-400"
               >
-                FAQ & Pricing
+                Prep
               </Link>
               <Link
-                to="/blog"
+                to="/faq-page"
                 className="block text-center hover:text-gray-400"
               >
-                Blog
+                FAQ
               </Link>
               <Link
-                to="/contact"
+                to="/contact-page"
                 className="block text-center hover:text-gray-400"
               >
                 Contact

@@ -43,15 +43,15 @@ const Layout = ({ children }) => {
               Home
             </Link>
             <Link to="/gravity-method" className="hover:text-gray-400">
-              Gravity Method Colonics
+              Details
             </Link>
-            <Link to="/faq-pricing" className="hover:text-gray-400">
-              FAQ & Pricing
+            <Link to="/pricing-page" className="hover:text-gray-400">
+              Prep
             </Link>
-            <Link to="/blog" className="hover:text-gray-400">
-              Blog
+            <Link to="/faq-page" className="hover:text-gray-400">
+              FAQ
             </Link>
-            <Link to="/contact" className="hover:text-gray-400">
+            <Link to="/contact-page" className="hover:text-gray-400">
               Contact
             </Link>
           </div>

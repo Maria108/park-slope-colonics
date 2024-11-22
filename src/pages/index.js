@@ -10,26 +10,45 @@ import { IoCheckmarkDoneSharp } from "react-icons/io5"
 
 const HomePage = () => (
   <Layout>
-    {/* Section 1: Hero */}
     <section
-      className="relative h-auto min-h-[70vh] w-full bg-cover bg-center text-white flex flex-col justify-center items-center"
+      className="relative h-auto min-h-[70vh] w-full bg-cover bg-center text-white flex flex-col sm:flex-row items-center"
       style={{ backgroundImage: `url(${waterImage})` }}
     >
-      <div className="absolute inset-0 bg-customBlue bg-opacity-30"></div>
-      <h1 className="relative text-4xl sm:text-5xl font-bold mb-4 z-10 text-center">
-        Lighter & Brighter with Park Slope Colonics
-      </h1>
-      <a
-        href="https://square-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="relative z-10 bg-white text-customDarkGreen px-6 py-3 text-lg rounded-md hover:bg-customBeige"
-      >
-        Book an Appointment
-      </a>
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-customBlue bg-opacity-40"></div>
+
+      {/* Right Section - Slogan */}
+      <div className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-center text-center p-6 sm:p-12">
+        <h1 className="text-3xl sm:text-4xl font-bold sm:text-customDarkGreen text-white">
+          Let go of what weighs you down <br /> with Park Slope Colonics
+        </h1>
+      </div>
+
+      {/* Left Section - Text */}
+      <div className="relative z-10 min-h-[70vh] w-full sm:w-1/3 order-2 sm:order-1 bg-white bg-opacity-70 text-customDarkGreen p-6 sm:p-10 flex flex-col justify-center items-center">
+        <h2 className="text-xl font-bold mb-6 text-center">
+          Gravity Colon Hydrotherapy Session
+        </h2>
+        <p className="text-lg text-gray-700 mb-4 text-justify indent-5">
+          Discover a gentle yet powerful way to support your body’s natural
+          detoxification and digestive health. Colon hydrotherapy isn’t just
+          about cleansing—it’s about restoring balance, easing discomfort, and
+          helping you feel your best from the inside out.
+        </p>
+        <p className="text-xl font-bold mb-6 text-center">
+          One Colonic Session (45-60 mins) - $150
+        </p>
+        <a
+          href="https://square-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white text-customDarkGreen px-6 py-3 text-lg rounded-md hover:bg-customBeige"
+        >
+          Book an Appointment
+        </a>
+      </div>
     </section>
 
-    {/* Section 2: What Will You Get */}
     <section className="my-20 px-8 max-w-6xl mx-auto text-customDarkGreen">
       <h2 className="text-3xl font-bold text-center mb-12">
         What Will You Get Out of the Treatment
@@ -120,6 +139,8 @@ const HomePage = () => (
         </div>
       </div>
     </section>
+
+    {/* Section 2: Pricing */}
 
     {/* Section 3: Meet Your Therapist */}
     <section className="my-20">

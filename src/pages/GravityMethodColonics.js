@@ -12,7 +12,7 @@ import {
 
 const GravityMethodColonics = () => {
   return (
-    <main className="text-customDarkGreen">
+    <main className="text-customDarkGreen sm:mx-20">
       {/* First Section */}
       <section className="mb-20">
         <div className="grid grid-cols-1 md:grid-cols-2">
@@ -24,11 +24,11 @@ const GravityMethodColonics = () => {
             }}
           >
             <div className="bg-customPink bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
-              <div className="max-w-md text-center">
-                <h2 className="text-2xl sm:text-3xl font-bold">
+              <div className="max-w-md">
+                <h2 className="text-2xl sm:text-3xl font-bold text-center">
                   Gravity Method Colonics
                 </h2>
-                <p className="mt-4 text-justify indent-5 text-sm sm:text-base">
+                <p className="mt-4 text-sm sm:text-base text-left">
                   A colonic is a thorough cleansing of the colon (large
                   intestine) using warm purified water. The Gravity Method,
                   employed in my private practice, ensures a comfortable and
@@ -57,7 +57,7 @@ const GravityMethodColonics = () => {
       </section>
 
       {/* Second Section */}
-      <section className="my-20 px-4 sm:px-8">
+      <section className="my-20">
         <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">
           How Do You Know It's Time for a Colonic
         </h2>
@@ -119,7 +119,7 @@ const GravityMethodColonics = () => {
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center flex items-center justify-center">
                 {item.title} {item.icon}
               </h3>
-              <p className="text-justify text-sm sm:text-base">
+              <p className="text-left text-sm sm:text-base">
                 {item.description}
               </p>
             </div>

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Footer = () => (
-  <footer className="text-customDarkBlue bg-gradient-to-b from-white to-customLigtBlue py-12 px-6 font-comfortaa border-t-2 border-customBlue">
+  <footer className="text-customDarkBlue bg-gradient-to-b from-white to-customLigtBlue py-12 px-6 font-comfortaa border-t-2 border-customBlue sm:mx-20">
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Column 1: Contact Info */}
       <div>

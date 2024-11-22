@@ -2,6 +2,8 @@ import React from "react"
 // import { Link } from "gatsby"
 import Layout from "../components/layout"
 import waterImage from "../images/bali.jpg"
+import me from "../images/mem.jpg"
+import me1 from "../images/me7.jpg"
 import lenaImage from "../images/lena.jpeg"
 import lena4Image from "../images/lena4.jpeg"
 import { FaFeather, FaGem } from "react-icons/fa"
@@ -11,31 +13,31 @@ import { IoCheckmarkDoneSharp } from "react-icons/io5"
 const HomePage = () => (
   <Layout>
     <section
-      className="relative h-auto min-h-[70vh] w-full bg-cover bg-center text-white flex flex-col sm:flex-row items-center"
-      style={{ backgroundImage: `url(${waterImage})` }}
+      className="relative h-auto min-h-[70vh] sm:mx-20 mb-20 bg-cover bg-top text-white flex flex-col sm:flex-row items-center"
+      style={{ backgroundImage: `url(${me1})` }}
     >
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-customBlue bg-opacity-40"></div>
-
       {/* Right Section - Slogan */}
-      <div className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-center text-center p-6 sm:p-12">
+      <div
+        className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-center text-center p-6 sm:p-12 bg-cover bg-center sm:min-h-[70vh]"
+        style={{ backgroundImage: `url(${me})` }}
+      >
         <h1 className="text-2xl sm:text-4xl font-bold text-customDarkGreen">
           Let go of what weighs you down <br /> with Park Slope Colonics
         </h1>
       </div>
 
       {/* Left Section - Text */}
-      <div className="relative z-10 min-h-[70vh] w-full sm:w-1/3 order-2 sm:order-1 bg-white bg-opacity-70 text-customDarkGreen px-6 flex flex-col justify-center">
+      <div className="relative z-10 min-h-[70vh] w-full sm:w-[40%] order-2 sm:order-1 bg-white bg-opacity-70 text-customDarkGreen px-6 flex flex-col justify-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">
           Gravity Colon Hydrotherapy
         </h2>
-        <p className="text-lg mb-4 text-left">
+        <p className="text-sm sm:text-base mb-4 text-left">
           Discover a gentle yet powerful way to support your body’s natural
           detoxification and digestive health. Colon hydrotherapy isn’t just
           about cleansing—it’s about restoring balance, easing discomfort, and
           helping you feel your best from the inside out.
         </p>
-        <p className="text-lg my-6 font-bold self-left">
+        <p className="text-sm sm:text-base mt-14 mb-6 font-bold self-left">
           One Colonic Session (45-60 mins) - $150
         </p>
         <a
@@ -143,7 +145,7 @@ const HomePage = () => (
     {/* Section 2: Pricing */}
 
     {/* Section 3: Meet Your Therapist */}
-    <section className="my-20">
+    <section className="my-20 sm:mx-20">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Left Background Image */}
         <div
@@ -187,7 +189,7 @@ const HomePage = () => (
     </section>
 
     {/* Section 4: What Clients Are Saying */}
-    <section className="h-auto my-20 px-8 text-customDarkGreen">
+    <section className="h-auto my-20 sm:mx-8 px-8 text-customDarkGreen">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
         What Clients Are Saying
       </h2>

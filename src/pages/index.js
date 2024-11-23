@@ -19,10 +19,10 @@ const HomePage = () => (
     >
       {/* Right Section - Slogan */}
       <div
-        className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-center text-center p-6 sm:p-12 bg-cover bg-center sm:min-h-[70vh]"
+        className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-left p-6 sm:p-12 bg-cover bg-center sm:min-h-[70vh]"
         style={{ backgroundImage: `url(${me})` }}
       >
-        <h1 className="text-2xl sm:text-4xl font-bold text-customDarkGreen">
+        <h1 className="text-2xl sm:text-4xl font-bold text-customDarkGreen text-left">
           Let go of what weighs you down <br /> with Park Slope Colonics
         </h1>
       </div>

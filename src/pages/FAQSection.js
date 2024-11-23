@@ -52,7 +52,9 @@ const FAQSection = () => {
 
   return (
     <section className="bg-white py-20 px-4 sm:px-0 sm:mx-20">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">FAQ</h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">
+        Frequently Asked Question
+      </h2>
       <div className="space-y-8">
         {faqs.map((faq, index) => {
           const isExpandable = faq.answer.length > 150 // Adjust threshold as needed

@@ -1,21 +1,19 @@
 import React from "react"
 import lena6Image from "../images/prep.jpeg"
-import greens from "../images/lemons.jpg"
+import lena5Image from "../images/lena5.jpeg"
+import preps from "../images/glass.jpg"
 import { GiCheckMark } from "react-icons/gi"
 import { GoStop } from "react-icons/go"
 
 const PricingPreparationFAQ = () => {
   return (
-    <section className="my-10 sm:mx-20 text-customDarkGreen">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center">
-        HOW TO PREPARE
-      </h2>
+    <section className="sm:mx-20 text-customDarkGreen">
       <div className="grid grid-cols-1 sm:grid-cols-3">
         {/* Left Section - Image */}
         <div
           className="relative bg-cover bg-center h-[50vh] sm:h-[70vh] bg-no-repeat"
           style={{
-            backgroundImage: `url(${lena6Image})`,
+            backgroundImage: `url(${preps})`,
           }}
         ></div>
 
@@ -23,7 +21,7 @@ const PricingPreparationFAQ = () => {
         <div
           className="relative sm:col-span-2 h-auto sm:h-[70vh] bg-cover bg-center text-white flex items-center"
           style={{
-            backgroundImage: `url(${lena6Image})`,
+            backgroundImage: `url(${preps})`,
           }}
         >
           {/* Background Overlay */}
@@ -31,6 +29,9 @@ const PricingPreparationFAQ = () => {
 
           {/* Text Content */}
           <div className="relative z-10 p-6 sm:p-14 text-customDarkGreen w-full">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-5 text-center">
+              How To Prepare
+            </h2>
             <p className="text-sm sm:text-base mb-8 text-left">
               Here are some recommendations to help you get the most out of your
               session, not requirements. Few days prior and right after your

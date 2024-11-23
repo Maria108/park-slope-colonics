@@ -1,64 +1,84 @@
 import React from "react"
-import lena6Image from "../images/lena6.jpeg"
-import lena1Image from "../images/lena1.jpeg"
-import bellyImage from "../images/greenbelly.jpeg"
+import lena6Image from "../images/prep.jpeg"
+import greens from "../images/lemons.jpg"
+import { GiCheckMark } from "react-icons/gi"
+import { GoStop } from "react-icons/go"
 
 const PricingPreparationFAQ = () => {
   return (
-    <main className="text-customDarkGreen">
-      {/* First Section */}
-      <section className="my-20 px-4 sm:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">
-          HOW TO PREPARE
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-8">
-          <div
-            className="relative bg-cover bg-center h-[50vh] sm:h-[60vh] bg-no-repeat"
-            style={{
-              backgroundImage: `url(${lena6Image})`,
-            }}
-          >
-            {/* <div className="absolute inset-0 bg-customPink bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen text-lg sm:text-xl"></div> */}
-          </div>
+    <section className="my-10 sm:mx-20 text-customDarkGreen">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center">
+        HOW TO PREPARE
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-3">
+        {/* Left Section - Image */}
+        <div
+          className="relative bg-cover bg-center h-[50vh] sm:h-[70vh] bg-no-repeat"
+          style={{
+            backgroundImage: `url(${lena6Image})`,
+          }}
+        ></div>
 
-          <div className="p-4 sm:p-8 text-lg sm:text-xl">
-            <p className="max-w text-justify">
+        {/* Right Section - Background with Text Overlay */}
+        <div
+          className="relative sm:col-span-2 h-auto sm:h-[70vh] bg-cover bg-center text-white flex items-center"
+          style={{
+            backgroundImage: `url(${lena6Image})`,
+          }}
+        >
+          {/* Background Overlay */}
+          <div className="absolute inset-0 bg-customPink bg-opacity-90"></div>
+
+          {/* Text Content */}
+          <div className="relative z-10 p-6 sm:p-14 text-customDarkGreen w-full">
+            <p className="text-sm sm:text-base mb-8 text-left">
               Here are some recommendations to help you get the most out of your
               session, not requirements. Few days prior and right after your
               colonic session:
             </p>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6 text-justify">
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 text-left">
               {/* AVOID Column */}
               <div>
-                <span className="font-bold">AVOID:</span>
+                <p className="flex items-center font-bold mb-2">
+                  <GoStop className="text-red-400 mr-2 text-xl" /> AVOID:
+                </p>
                 <ul className="list-disc pl-5">
-                  <li>Alcohol</li>
-                  <li>Carbonated drinks</li>
-                  <li>Dairy Products</li>
-                  <li>Fatty and fried foods</li>
-                  <li>White flour products</li>
-                  <li>Processed and junk foods</li>
-                  <li>Beans and legumes</li>
+                  <li className="mb-1">Alcohol</li>
+                  <li className="mb-1">Carbonated drinks</li>
+                  <li className="mb-1">Dairy Products</li>
+                  <li className="mb-1">Fatty and fried foods</li>
+                  <li className="mb-1">White flour products</li>
+                  <li className="mb-1">Processed and junk foods</li>
+                  <li className="mb-1">Beans and legumes</li>
                 </ul>
               </div>
 
               {/* INCLUDE Column */}
-              <div>
-                <span className="font-bold">INCLUDE:</span>
+              <div className="relative md:ml-[-10px]">
+                <p className="flex items-center font-bold mb-2">
+                  <GiCheckMark className="text-customGreen mr-2 text-xl" />
+                  INCLUDE:
+                </p>
                 <ul className="list-disc pl-5">
-                  <li>Leafy greens (kale, spinach, mustard greens)</li>
-                  <li>Seasonal organic vegetables, fruits, berries</li>
-                  <li>Veggie juices/smoothies</li>
-                  <li>Fermented foods (except kombucha)</li>
-                  <li>Whole grains (brown rice, quinoa)</li>
-                  <li>Ginger or peppermint tea</li>
-                  <li>Purified and distilled water, herbal teas</li>
+                  <li className="mb-1">
+                    Leafy greens (kale, spinach, mustard greens)
+                  </li>
+                  <li className="mb-1">
+                    Seasonal organic vegetables, fruits, berries
+                  </li>
+                  <li className="mb-1">Veggie juices/smoothies</li>
+                  <li className="mb-1">Fermented foods (except kombucha)</li>
+                  <li className="mb-1">Whole grains (brown rice, quinoa)</li>
+                  <li className="mb-1">Ginger or peppermint tea</li>
+                  <li className="mb-1">
+                    Purified and distilled water, herbal teas
+                  </li>
                 </ul>
               </div>
             </div>
 
-            <h3 className="mt-6 font-bold">On the day of your session:</h3>
-            <p className="mt-4 text-justify">
+            <h3 className="my-4 font-bold">On the day of your session:</h3>
+            <p className="text-sm sm:text-base mb-8 text-left">
               You should come on an empty stomach, stop eating at least 3.5
               hours before your appointment and stop drinking about 1.5 hours
               before your appointment. You'll feel a lot more comfortable if you
@@ -67,8 +87,8 @@ const PricingPreparationFAQ = () => {
             </p>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   )
 }
 

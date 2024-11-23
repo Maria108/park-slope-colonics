@@ -9,6 +9,7 @@ import lena4Image from "../images/lena4.jpeg"
 import { FaFeather, FaGem } from "react-icons/fa"
 import { FaChildReaching } from "react-icons/fa6"
 import { IoCheckmarkDoneSharp } from "react-icons/io5"
+import { GiCheckMark } from "react-icons/gi"
 
 const HomePage = () => (
   <Layout>
@@ -62,23 +63,23 @@ const HomePage = () => (
           <h3 className="text-xl font-semibold uppercase my-4">Feel</h3>
           <ul className="list-none mx-auto inline-block text-left mt-2">
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Increased energy
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Improved digestion
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Clearer skin
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Reduced bloating
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Better mood
             </li>
           </ul>
@@ -90,23 +91,23 @@ const HomePage = () => (
           <h3 className="text-xl font-semibold uppercase my-4">Look</h3>
           <ul className="list-none mx-auto inline-block text-left mt-2">
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Flatter stomach
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Glowing complexion
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Lighter body
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Clearer eyes
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Refreshed appearance
             </li>
           </ul>
@@ -118,23 +119,23 @@ const HomePage = () => (
           <h3 className="text-xl font-semibold uppercase my-4">Experience</h3>
           <ul className="list-none mx-auto inline-block text-left mt-2">
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Relaxation
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Well-being
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Comfort
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Positive mindset
             </li>
             <li className="flex items-center mb-4">
-              <IoCheckmarkDoneSharp className="text-customGreen mr-2 text-2xl" />
+              <GiCheckMark className="text-customGreen mr-2 text-2xl" />
               Increased focus
             </li>
           </ul>

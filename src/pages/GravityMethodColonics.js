@@ -26,7 +26,7 @@ const GravityMethodColonics = () => {
             <div className="bg-customPink bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
               <div className="max-w-md">
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">
-                  Gravity Method Colonics
+                  About Us
                 </h2>
                 <p className="mt-4 text-sm sm:text-base text-left">
                   A colonic is a thorough cleansing of the colon (large

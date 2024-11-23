@@ -1,6 +1,4 @@
 import React from "react"
-import lena6Image from "../images/prep.jpeg"
-import lena5Image from "../images/lena5.jpeg"
 import preps from "../images/glass.jpg"
 import { GiCheckMark } from "react-icons/gi"
 import { GoStop } from "react-icons/go"
@@ -25,7 +23,7 @@ const PricingPreparationFAQ = () => {
           }}
         >
           {/* Background Overlay */}
-          <div className="absolute inset-0 bg-customPink bg-opacity-90"></div>
+          <div className="absolute inset-0 bg-customLigterBlue bg-opacity-90"></div>
 
           {/* Text Content */}
           <div className="relative z-10 p-6 sm:p-14 text-customDarkGreen w-full">
@@ -40,7 +38,7 @@ const PricingPreparationFAQ = () => {
             <div className="mt-4 grid grid-cols-1 md:grid-cols-2 text-left">
               {/* AVOID Column */}
               <div>
-                <p className="flex items-center font-bold mb-2">
+                <p className="flex items-center font-comfortaaBold mb-2">
                   <GoStop className="text-red-400 mr-2 text-xl" /> AVOID:
                 </p>
                 <ul className="list-disc pl-5">
@@ -55,8 +53,8 @@ const PricingPreparationFAQ = () => {
               </div>
 
               {/* INCLUDE Column */}
-              <div className="relative md:ml-[-10px]">
-                <p className="flex items-center font-bold mb-2">
+              <div className="relative mt-8 sm:mt-0 md:ml-[-10px]">
+                <p className="flex items-center font-comfortaaBold mb-2">
                   <GiCheckMark className="text-customGreen mr-2 text-xl" />
                   INCLUDE:
                 </p>
@@ -78,13 +76,12 @@ const PricingPreparationFAQ = () => {
               </div>
             </div>
 
-            <h3 className="my-4 font-bold">On the day of your session:</h3>
-            <p className="text-sm sm:text-base mb-8 text-left">
-              You should come on an empty stomach, stop eating at least 3.5
-              hours before your appointment and stop drinking about 1.5 hours
-              before your appointment. You'll feel a lot more comfortable if you
-              avoid a full stomach and bladder. It's important to stay hydrated
-              pre and post colonic session.
+            <p className="text-sm sm:text-base my-8 text-left">
+              On the day of your session you should come on an empty stomach,
+              stop eating at least 3.5 hours before your appointment and stop
+              drinking about 1.5 hours before your appointment. You'll feel a
+              lot more comfortable if you avoid a full stomach and bladder. It's
+              important to stay hydrated pre and post colonic session.
             </p>
           </div>
         </div>

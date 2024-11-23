@@ -9,10 +9,9 @@
   font-weight: normal;
   font-style: normal;
 }
-/*   
-  @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../fonts/MyCustomFont-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-  } */
+@font-face {
+  font-family: "ComfortaaBoldFont";
+  src: url("../fonts/Comfortaa-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}

@@ -23,7 +23,7 @@ const GravityMethodColonics = () => {
               backgroundImage: `url(${lena6Image})`,
             }}
           >
-            <div className="bg-customPink bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
+            <div className="bg-customLigterBlue bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
               <div className="max-w-md">
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">
                   About Us
@@ -114,7 +114,7 @@ const GravityMethodColonics = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="p-4 sm:p-6 bg-customBeige rounded-md shadow-lg"
+              className="p-4 sm:p-6 bg-customLigterBlue rounded-md shadow-lg"
             >
               <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center flex items-center justify-center">
                 {item.title} {item.icon}

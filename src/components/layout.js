@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
     <div className="flex flex-col min-h-screen">
       {/* NavBar */}
       <header className="bg-white text-customDarkBlue font-comfortaa border-b-2 border-customBlue sm:mx-20">
-        <nav className="container mx-auto flex justify-between items-center p-6">
+        <nav className="container mx-auto sm:px-0 px-6 flex justify-between items-center py-6">
           {/* Left: Dynamic Site Title */}
           <div className="flex items-center">
             <img
@@ -39,26 +39,38 @@ const Layout = ({ children }) => {
 
           {/* Right: Nav Links for Large Screens */}
           <div className="hidden md:flex space-x-4">
-            <Link to="/" className="hover:text-gray-400">
+            <Link to="/" className="hover:text-gray-800">
               Home
             </Link>
-            <Link to="/gravity-method" className="hover:text-gray-400">
+            <Link to="/gravity-method" className="hover:text-gray-800">
               Details
             </Link>
-            <Link to="/pricing-page" className="hover:text-gray-400">
+            <Link to="/pricing-page" className="hover:text-gray-800">
               Prep
             </Link>
-            <Link to="/faq-page" className="hover:text-gray-400">
+            <Link to="/faq-page" className="hover:text-gray-800">
               FAQ
             </Link>
-            <Link to="/contact-page" className="hover:text-gray-400">
+            <Link to="/contact-page" className="hover:text-gray-800">
               Contact
             </Link>
           </div>
 
           {/* Hamburger Icon for Small Screens */}
-          <div className="md:hidden flex items-center" onClick={toggleMenu}>
-            <button className="text-customBlue focus:outline-none">
+          <div
+            className="md:hidden flex items-center"
+            onClick={toggleMenu}
+            tabIndex="0"
+            role="button"
+            aria-pressed={isMenuOpen}
+            onKeyDown={e =>
+              e.key === "Enter" || e.key === " " ? toggleMenu() : null
+            }
+          >
+            <button
+              className="text-customBlue focus:outline-none"
+              aria-label="Toggle menu"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

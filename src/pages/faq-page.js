@@ -1,13 +1,12 @@
 // src/pages/faq-page.js
 import React from "react"
 import Layout from "../components/layout"
-import FAQSection from "./FAQSection"
-import FAQ from "./FAQ"
+import FAQSection from "./FAQ"
 
 const FAQPage = () => {
   return (
     <Layout>
-      <FAQ />
+      <FAQSection />
     </Layout>
   )
 }

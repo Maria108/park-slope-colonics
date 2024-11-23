@@ -1,14 +1,7 @@
-import React, { useState } from "react"
-import lena6Image from "../images/lena6.jpeg"
+import React from "react"
 import water1 from "../images/water1.jpg"
 
 const FAQSection = () => {
-  const [openIndex, setOpenIndex] = useState(null)
-
-  const toggleFAQ = index => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
-
   const faqs = [
     {
       question: "How long is a typical session?",

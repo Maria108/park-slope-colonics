@@ -1,38 +1,37 @@
 import React from "react"
-// import { Link } from "gatsby"
 import Layout from "../components/layout"
-import waterImage from "../images/bali.jpg"
 import me from "../images/mem.jpg"
-import me1 from "../images/me7.jpg"
 import lenaImage from "../images/lena.jpeg"
 import lena4Image from "../images/lena4.jpeg"
 import { FaFeather, FaGem } from "react-icons/fa"
 import { FaChildReaching } from "react-icons/fa6"
-import { IoCheckmarkDoneSharp } from "react-icons/io5"
 import { GiCheckMark } from "react-icons/gi"
 
 const HomePage = () => (
   <Layout>
     <section
-      className="relative h-auto min-h-[70vh] sm:mx-20 mb-20 bg-cover bg-top text-white flex flex-col sm:flex-row items-center"
-      style={{ backgroundImage: `url(${me1})` }}
+      className="relative h-auto min-h-[70vh] sm:mx-20 mb-20 sm:bg-cover bg-auto bg-left-top sm:bg-top flex flex-col sm:flex-row items-center"
+      style={{
+        backgroundImage: `url(${me})`,
+      }}
     >
       {/* Right Section - Slogan */}
       <div
-        className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-left p-6 sm:p-12 bg-cover bg-center sm:min-h-[70vh]"
+        className="relative z-10 w-full sm:w-2/3 order-1 sm:order-2 flex flex-col justify-center items-left p-6 sm:p-12 bg-cover bg-center min-h-[30vh] sm:min-h-[70vh]"
         style={{ backgroundImage: `url(${me})` }}
       >
-        <h1 className="text-2xl sm:text-4xl font-bold text-customDarkGreen text-left">
-          Let go of what weighs you down <br /> with Park Slope Colonics
+        <h1 className="text-lg sm:text-4xl font-bold text-customDarkGreen text-left">
+          Let go of what weighs you down <br />{" "}
+          <span className="sm:pl-16 pl-10">with Park Slope Colonics</span>
         </h1>
       </div>
 
       {/* Left Section - Text */}
-      <div className="relative z-10 min-h-[70vh] w-full sm:w-[40%] order-2 sm:order-1 bg-white bg-opacity-70 text-customDarkGreen px-6 flex flex-col justify-center">
+      <div className="relative z-10 h-[55vh] sm:h-[70vh] w-full sm:w-[40%] order-2 sm:order-1 bg-white bg-opacity-70 text-customDarkGreen px-6 flex flex-col justify-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">
-          Gravity Colon Hydrotherapy
+          Colon Hydrotherapy
         </h2>
-        <p className="text-sm sm:text-base mb-4 text-left">
+        <p className="text-sm sm:text-base mb-2 mx-4 max-w-sm text-left">
           Discover a gentle yet powerful way to support your body’s natural
           detoxification and digestive health. Colon hydrotherapy isn’t just
           about cleansing—it’s about restoring balance, easing discomfort, and
@@ -41,7 +40,7 @@ const HomePage = () => (
           looking for relief or proactive wellness, we’re here to help you feel
           your best.
         </p>
-        <p className="text-sm sm:text-base mt-14 mb-6 font-bold self-left">
+        <p className="text-sm sm:text-base mt-14 mb-6 ml-4 font-comfortaaBold self-left">
           One Colonic Session (45-60 mins) - $150
         </p>
         <a
@@ -63,7 +62,7 @@ const HomePage = () => (
         {/* Feel Section */}
         <div>
           <FaFeather className="mx-auto text-4xl text-customGreen mb-4" />
-          <h3 className="text-xl font-semibold uppercase my-4">Feel</h3>
+          <h3 className="text-xl font-semibold my-4">Feel</h3>
           <ul className="list-none mx-auto inline-block text-left mt-2">
             <li className="flex items-center mb-4">
               <GiCheckMark className="text-customGreen mr-2 text-2xl" />
@@ -91,7 +90,7 @@ const HomePage = () => (
         {/* Look Section */}
         <div>
           <FaGem className="mx-auto text-4xl text-customGreen mb-4" />
-          <h3 className="text-xl font-semibold uppercase my-4">Look</h3>
+          <h3 className="text-xl font-semibold my-4">Look</h3>
           <ul className="list-none mx-auto inline-block text-left mt-2">
             <li className="flex items-center mb-4">
               <GiCheckMark className="text-customGreen mr-2 text-2xl" />
@@ -119,7 +118,7 @@ const HomePage = () => (
         {/* Experience Section */}
         <div>
           <FaChildReaching className="mx-auto text-4xl text-customGreen mb-4" />
-          <h3 className="text-xl font-semibold uppercase my-4">Experience</h3>
+          <h3 className="text-xl font-semibold my-4">Experience</h3>
           <ul className="list-none mx-auto inline-block text-left mt-2">
             <li className="flex items-center mb-4">
               <GiCheckMark className="text-customGreen mr-2 text-2xl" />
@@ -167,7 +166,7 @@ const HomePage = () => (
           }}
         >
           <div className="absolute inset-0 bg-customPink bg-opacity-70 text-customDarkGreen flex items-center justify-center p-6 sm:p-8">
-            <div className="max-w-full px-4 sm:px-6">
+            <div className="max-w-md">
               <h2 className="text-2xl sm:text-3xl font-bold text-center">
                 Meet Your Therapist
               </h2>

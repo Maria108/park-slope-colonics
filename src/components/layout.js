@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Footer from "./Footer"
-import logoImg from "../images/logo1.png"
+import logoImg from "../images/logos.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
               alt="Site Logo"
               className="h-8 mr-4" // Adjust size as needed
             />
-            <h1 className="text-2xl font-bold text-customBlue">
+            <h1 className="text-2xl font-bold">
               <Link to="/">{data.site.siteMetadata.title}</Link>
             </h1>
           </div>

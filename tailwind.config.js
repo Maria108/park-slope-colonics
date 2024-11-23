@@ -6,8 +6,9 @@ module.exports = {
       colors: {
         customBlue: "#ABC8DE",
         customLigtBlue: "#d5e3ef",
+        customLigtererBlue: "#e5edf5",
         customLigterBlue: "#e8eff6",
-        customDarkBlue: "#637382",
+        customDarkBlue: "#889eae",
         customGreen: "#B5C0AC",
         customDarkGreen: "#363e30",
         customPink: "#e1d7d0",

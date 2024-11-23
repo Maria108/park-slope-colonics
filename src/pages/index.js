@@ -36,7 +36,10 @@ const HomePage = () => (
           Discover a gentle yet powerful way to support your body’s natural
           detoxification and digestive health. Colon hydrotherapy isn’t just
           about cleansing—it’s about restoring balance, easing discomfort, and
-          helping you feel your best from the inside out.
+          helping you feel your best from the inside out. Each session is
+          tailored to your needs in a calm, relaxing environment. Whether you’re
+          looking for relief or proactive wellness, we’re here to help you feel
+          your best.
         </p>
         <p className="text-sm sm:text-base mt-14 mb-6 font-bold self-left">
           One Colonic Session (45-60 mins) - $150
@@ -248,7 +251,7 @@ const HomePage = () => (
         ].map((quote, index) => (
           <div
             key={index}
-            className="relative bg-customBeige p-4 rounded-md h-36 flex flex-col justify-center items-center text-center transition-transform duration-700 ease-in-out transform scale-95 overflow-hidden hover:scale-100 hover:h-auto"
+            className="relative bg-customLigterBlue p-4 rounded-md h-36 flex flex-col justify-center items-center text-center transition-transform duration-700 ease-in-out transform scale-95 overflow-hidden hover:scale-100 hover:h-auto"
           >
             <blockquote className="w-full">
               <p className="line-clamp-3 hover:line-clamp-none">{quote.text}</p>

@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import lena6Image from "../images/lena6.jpeg"
+import water1 from "../images/water1.jpg"
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null)
@@ -51,25 +53,43 @@ const FAQSection = () => {
   ]
 
   return (
-    <section className="bg-white py-20 px-4 sm:px-0 sm:ml-20 sm:mr-60">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">
-        Frequently Asked Questions
-      </h2>
-      <div className="space-y-8">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="relative bg-customBeige p-6 rounded-md shadow-lg flex flex-col justify-center transition-transform duration-300 ease-in-out transform scale-95 overflow-hidden hover:scale-100 hover:h-auto"
-          >
-            {/* Question */}
-            <div className="font-bold mb-2">{faq.question}</div>
+    <section className="sm:mx-20 grid grid-cols-1 md:grid-cols-3">
+      {/* Left Image Section */}
+      <div
+        className="relative bg-cover bg-center min-h-full"
+        style={{
+          backgroundImage: `url(${water1})`,
+        }}
+      >
+        {/* Colored Overlay */}
+        <div className="absolute inset-0 bg-customBlue bg-opacity-30"></div>
+      </div>
 
-            {/* Answer (collapsed by default, expanded on hover) */}
-            <p className="line-clamp-1 hover:line-clamp-none transition-all duration-300 ease-in-out">
-              {faq.answer}
-            </p>
+      {/* Right FAQ Section */}
+      <div
+        className="relative col-span-2 bg-cover bg-center"
+        style={{ backgroundImage: `url(${water1})` }}
+      >
+        {/* Background Overlay */}
+        <div className="absolute inset-0 bg-customBlue bg-opacity-50"></div>
+
+        {/* FAQ Content */}
+        <div className="relative z-10 p-6 sm:p-12 text-customDarkGreen bg-white bg-opacity-80">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-customDarkGreen">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-1">
+            {faqs.map((faq, index) => (
+              <div key={index} className="p-4">
+                <h3 className="font-bold text-2xl mb-2">{faq.question}</h3>
+                <p
+                  className="text-sm sm:text-base"
+                  dangerouslySetInnerHTML={{ __html: faq.answer }}
+                />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </section>
   )

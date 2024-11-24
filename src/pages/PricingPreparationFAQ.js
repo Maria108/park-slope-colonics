@@ -52,16 +52,14 @@ const PricingPreparationFAQ = () => {
               </div>
 
               {/* INCLUDE Column */}
-              <div className="ml-[-10px]">
+              <div className="md:ml-[-20px]">
                 <p className="flex items-center font-comfortaaBold mb-2">
                   <GiCheckMark className="text-customGreen mr-2 text-xl" />
                   INCLUDE:
                 </p>
                 <ul className="list-disc pl-5">
                   <li className="mb-1">Leafy greens</li>
-                  <li className="mb-1">
-                    Seasonal organic vegetables, fruits, berries
-                  </li>
+                  <li className="mb-1">Seasonal vegetables, fruits, berries</li>
                   <li className="mb-1">Veggie juices/smoothies</li>
                   <li className="mb-1">Fermented foods (except kombucha)</li>
                   <li className="mb-1">Whole grains (brown rice, quinoa)</li>

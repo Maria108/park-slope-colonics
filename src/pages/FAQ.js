@@ -47,18 +47,7 @@ const FAQSection = () => {
 
   return (
     <section className="sm:mx-20 grid grid-cols-1 md:grid-cols-3">
-      {/* Left Image Section */}
-      <div
-        className="relative bg-cover bg-center min-h-full"
-        style={{
-          backgroundImage: `url(${water1})`,
-        }}
-      >
-        {/* Colored Overlay */}
-        <div className="absolute inset-0 bg-customBlue bg-opacity-30"></div>
-      </div>
-
-      {/* Right FAQ Section */}
+      {/* Left FAQ Section */}
       <div
         className="relative col-span-2 bg-cover bg-center"
         style={{ backgroundImage: `url(${water1})` }}
@@ -83,6 +72,17 @@ const FAQSection = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Right Image Section */}
+      <div
+        className="relative bg-cover bg-center min-h-full"
+        style={{
+          backgroundImage: `url(${water1})`,
+        }}
+      >
+        {/* Colored Overlay */}
+        <div className="absolute inset-0 bg-customBlue bg-opacity-30"></div>
       </div>
     </section>
   )

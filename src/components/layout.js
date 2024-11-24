@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* NavBar */}
-      <header className="bg-white text-customDarkBlue font-comfortaa border-b-2 border-customBlue sm:mx-20">
+      <header className="bg-white text-customDarkBlue font-comfortaa border-b-2 border-customDarkBlue sm:mx-20">
         <nav className="container mx-auto sm:px-0 px-6 flex justify-between items-center py-6">
           {/* Left: Dynamic Site Title */}
           <div className="flex items-center">

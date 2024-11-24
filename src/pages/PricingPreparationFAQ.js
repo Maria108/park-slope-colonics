@@ -9,7 +9,7 @@ const PricingPreparationFAQ = () => {
       <div className="grid grid-cols-1 sm:grid-cols-3">
         {/* Left Section - Image */}
         <div
-          className="relative bg-cover bg-center h-[50vh] sm:h-[70vh] bg-no-repeat"
+          className="relative bg-cover bg-center bg-no-repeat sm:h-fauto min-h-[30vh]"
           style={{
             backgroundImage: `url(${preps})`,
           }}
@@ -17,7 +17,7 @@ const PricingPreparationFAQ = () => {
 
         {/* Right Section - Background with Text Overlay */}
         <div
-          className="relative sm:col-span-2 h-auto sm:h-[70vh] bg-cover bg-center text-white flex items-center"
+          className="relative sm:col-span-2 bg-cover bg-center text-white flex items-center"
           style={{
             backgroundImage: `url(${preps})`,
           }}
@@ -35,7 +35,7 @@ const PricingPreparationFAQ = () => {
               session, not requirements. Few days prior and right after your
               colonic session:
             </p>
-            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 text-left">
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 text-left gap-6">
               {/* AVOID Column */}
               <div>
                 <p className="flex items-center font-comfortaaBold mb-2">
@@ -46,22 +46,19 @@ const PricingPreparationFAQ = () => {
                   <li className="mb-1">Carbonated drinks</li>
                   <li className="mb-1">Dairy Products</li>
                   <li className="mb-1">Fatty and fried foods</li>
-                  <li className="mb-1">White flour products</li>
                   <li className="mb-1">Processed and junk foods</li>
                   <li className="mb-1">Beans and legumes</li>
                 </ul>
               </div>
 
               {/* INCLUDE Column */}
-              <div className="relative mt-8 sm:mt-0 md:ml-[-10px]">
+              <div className="ml-[-10px]">
                 <p className="flex items-center font-comfortaaBold mb-2">
                   <GiCheckMark className="text-customGreen mr-2 text-xl" />
                   INCLUDE:
                 </p>
                 <ul className="list-disc pl-5">
-                  <li className="mb-1">
-                    Leafy greens (kale, spinach, mustard greens)
-                  </li>
+                  <li className="mb-1">Leafy greens</li>
                   <li className="mb-1">
                     Seasonal organic vegetables, fruits, berries
                   </li>
@@ -69,9 +66,6 @@ const PricingPreparationFAQ = () => {
                   <li className="mb-1">Fermented foods (except kombucha)</li>
                   <li className="mb-1">Whole grains (brown rice, quinoa)</li>
                   <li className="mb-1">Ginger or peppermint tea</li>
-                  <li className="mb-1">
-                    Purified and distilled water, herbal teas
-                  </li>
                 </ul>
               </div>
             </div>

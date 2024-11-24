@@ -12,13 +12,13 @@ import {
 
 const GravityMethodColonics = () => {
   return (
-    <main className="text-customDarkGreen sm:mx-20">
+    <main className="text-customDarkGreen">
       {/* First Section */}
-      <section className="mb-20">
+      <section className="mb-20 sm:mx-20">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left Background Image with Text Overlay */}
           <div
-            className="bg-cover bg-center h-full min-h-[70vh]"
+            className="bg-cover bg-center h-auto"
             style={{
               backgroundImage: `url(${lena6Image})`,
             }}
@@ -48,7 +48,7 @@ const GravityMethodColonics = () => {
 
           {/* Right Background Image */}
           <div
-            className="bg-cover bg-center h-full min-h-[70vh]"
+            className="bg-cover bg-center h-full sm:min-h-[70vh] min-h-[50vh]"
             style={{
               backgroundImage: `url(${lena1Image})`,
             }}
@@ -57,7 +57,7 @@ const GravityMethodColonics = () => {
       </section>
 
       {/* Second Section */}
-      <section className="my-20">
+      <section className="my-20 mx-5 sm:mx-20">
         <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">
           How Do You Know It's Time for a Colonic
         </h2>

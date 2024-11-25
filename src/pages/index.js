@@ -6,6 +6,7 @@ import roomImage from "../images/room.jpeg"
 import { FaFeather, FaGem } from "react-icons/fa"
 import { FaChildReaching } from "react-icons/fa6"
 import { GiCheckMark } from "react-icons/gi"
+import { TiStarFullOutline } from "react-icons/ti"
 
 const HomePage = () => (
   <Layout>
@@ -21,7 +22,7 @@ const HomePage = () => (
         <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
           Colon Hydrotherapy
         </h2>
-        <p className="text-sm sm:text-base leading-relaxed mb-6 mx-4">
+        <p className="text-sm sm:text-base leading-relaxed mb-6 mx-4 indent-6">
           Discover a gentle yet powerful way to support your body’s natural
           detoxification and digestive health. Colon hydrotherapy isn’t just
           about cleansing—it’s about restoring balance, easing discomfort, and
@@ -85,7 +86,7 @@ const HomePage = () => (
               "Glowing complexion",
               "Lighter body",
               "Clearer eyes",
-              "Refreshed appearance",
+              "Refreshed look",
             ],
           },
           {
@@ -139,7 +140,7 @@ const HomePage = () => (
           <h2 className="text-xl sm:text-2xl md:text-3xl text-center font-bold mb-4 break-words">
             Meet Your Therapist
           </h2>
-          <p className="text-sm sm:text-base text-left leading-relaxed px-4 sm:px-6 md:px-16 break-words">
+          <p className="text-sm sm:text-base text-left indent-6 leading-relaxed px-4 sm:px-6 md:px-16 break-words">
             Elena Bykova is a certified colon hydrotherapist, a certified
             holistic nutritionist, and the founder of Park Slope Colonics.
             Elena’s journey began in her early twenties when she started working
@@ -160,7 +161,7 @@ const HomePage = () => (
     {/* What Clients Are Saying */}
     <section className="h-auto my-20 sm:mx-8 px-8 text-customDarkGreen">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
-        What Clients Are Saying
+        Here Are Few of 50+ Reviews From Google
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 overflow-y-auto max-h-[60vh]">
         {[
@@ -203,7 +204,14 @@ const HomePage = () => (
           >
             <blockquote className="w-full">
               <p className="line-clamp-3 hover:line-clamp-none">{quote.text}</p>
-              <cite className="mt-2">{quote.author}</cite>
+              <cite className="mt-2 flex items-center justify-center">
+                {quote.author}
+                <span className="ml-2 flex">
+                  {[...Array(5)].map((_, i) => (
+                    <TiStarFullOutline key={i} className="text-yellow-600" />
+                  ))}
+                </span>
+              </cite>
             </blockquote>
           </div>
         ))}

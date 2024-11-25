@@ -58,9 +58,9 @@ const Layout = ({ children }) => {
               href="https://square.site/book/B5H65JGC5J9Y9/park-slope-colonics-brooklyn-ny"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-customLigterBlue px-4 py-2 text-lg rounded-md hover:bg-customBeige text-center"
+              className="bg-customLigterBlue px-4 py-2 rounded-md hover:bg-customBeige text-center"
             >
-              Book an Appointment
+              Book
             </a>
           </div>
 
@@ -100,34 +100,31 @@ const Layout = ({ children }) => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-white shadow-lg">
-            <div className="space-y-4 py-4">
-              <Link to="/" className="block text-center hover:text-gray-400">
+            <div className="space-y-4 py-4 text-center">
+              <Link to="/" className="block hover:text-gray-400">
                 Home
               </Link>
-              <Link
-                to="/gravity-method"
-                className="block text-center hover:text-gray-400"
-              >
+              <Link to="/gravity-method" className="block hover:text-gray-400">
                 Details
               </Link>
-              <Link
-                to="/pricing-page"
-                className="block text-center hover:text-gray-400"
-              >
+              <Link to="/pricing-page" className="block hover:text-gray-400">
                 Prep
               </Link>
-              <Link
-                to="/faq-page"
-                className="block text-center hover:text-gray-400"
-              >
+              <Link to="/faq-page" className="block hover:text-gray-400">
                 FAQ
               </Link>
-              <Link
-                to="/contact-page"
-                className="block text-center hover:text-gray-400"
-              >
+              <Link to="/contact-page" className="block hover:text-gray-400">
                 Contact
               </Link>
+              <a
+                href="https://square.site/book/B5H65JGC5J9Y9/park-slope-colonics-brooklyn-ny"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-customLigterBlue px-4 py-2 rounded-md hover:bg-customBeige"
+                style={{ margin: "1rem auto 0 auto" }}
+              >
+                Book
+              </a>
             </div>
           </div>
         )}

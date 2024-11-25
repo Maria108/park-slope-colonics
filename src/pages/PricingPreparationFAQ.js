@@ -30,7 +30,7 @@ const PricingPreparationFAQ = () => {
             <h2 className="text-2xl sm:text-3xl font-bold mb-5 text-center">
               How To Prepare
             </h2>
-            <p className="text-sm sm:text-base mb-8 text-left">
+            <p className="text-sm sm:text-base indent-6 mb-8 text-left">
               Here are some recommendations to help you get the most out of your
               session, not requirements. Few days prior and right after your
               colonic session:
@@ -68,7 +68,7 @@ const PricingPreparationFAQ = () => {
               </div>
             </div>
 
-            <p className="text-sm sm:text-base my-8 text-left">
+            <p className="text-sm sm:text-base indent-6 my-8 text-left">
               On the day of your session you should come on an empty stomach,
               stop eating at least 3.5 hours before your appointment and stop
               drinking about 1.5 hours before your appointment. You'll feel a

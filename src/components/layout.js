@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
           </div>
 
           {/* Right: Nav Links for Large Screens */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-4 items-center">
             <Link to="/" className="hover:text-gray-800">
               Home
             </Link>
@@ -54,6 +54,14 @@ const Layout = ({ children }) => {
             <Link to="/contact-page" className="hover:text-gray-800">
               Contact
             </Link>
+            <a
+              href="https://square.site/book/B5H65JGC5J9Y9/park-slope-colonics-brooklyn-ny"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-customLigterBlue px-4 py-2 text-lg rounded-md hover:bg-customBeige text-center"
+            >
+              Book an Appointment
+            </a>
           </div>
 
           {/* Hamburger Icon for Small Screens */}

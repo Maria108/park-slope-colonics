@@ -1,18 +1,18 @@
 import React from "react"
-import me7 from "../images/prep.jpeg"
+import me7 from "../images/5.jpg"
 
 const Contact = () => {
   return (
     <section className="text-customDarkGreen sm:mx-20">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-2 h-auto sm:h-[70vh] h-[50vh]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 h-auto sm:h-[70vh] h-[50vh]">
         {/* Left Section - Contact Details */}
         <div
-          className="col-span-1 bg-cover bg-center flex items-center justify-center"
+          className="col-span-1 bg-cover bg-bottom flex items-center justify-center"
           style={{
             backgroundImage: `url(${me7})`,
           }}
         >
-          <div className="bg-customLigterBlue bg-opacity-70 p-4 sm:p-6 md:p-8 h-full w-full flex items-center">
+          <div className="p-4 sm:p-6 md:p-8 h-full w-full flex flex-col items-center justify-center">
             <div className="break-words whitespace-normal">
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-center">
                 Contacts
@@ -34,6 +34,15 @@ const Contact = () => {
                 </span>
               </div>
             </div>
+            {/* Button Section */}
+            <a
+              href="https://square.site/book/B5H65JGC5J9Y9/park-slope-colonics-brooklyn-ny"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white px-6 py-3 text-lg rounded-md hover:bg-customBeige inline-block mt-6 mb-36 md:mb-8"
+            >
+              Book an Appointment
+            </a>
           </div>
         </div>
 

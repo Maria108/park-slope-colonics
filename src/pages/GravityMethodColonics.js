@@ -24,7 +24,7 @@ const GravityMethodColonics = () => {
             }}
           >
             <div className="bg-customLigterBlue bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
-              <div className="max-w-md">
+              <div className="max-w-md my-5">
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">
                   About Us
                 </h2>

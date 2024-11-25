@@ -9,7 +9,7 @@ const Footer = () => (
         <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
         <p>Park Slope Colonics</p>
         <p>313 7th St, Brooklyn, NY, 11215</p>
-        <p>info@parkslopecolonics.com</p>
+        <p>parkslopecolonics@gmail.com</p>
         <p>646-385-9985 (text or call)</p>
       </div>
 

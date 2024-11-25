@@ -1,5 +1,5 @@
 import React from "react"
-import water1 from "../images/water1.jpg"
+import waterImage from "../images/water.jpg"
 
 const FAQSection = () => {
   const faqs = [
@@ -50,7 +50,7 @@ const FAQSection = () => {
       {/* Left FAQ Section */}
       <div
         className="relative col-span-2 bg-cover bg-center"
-        style={{ backgroundImage: `url(${water1})` }}
+        style={{ backgroundImage: `url(${waterImage})` }}
       >
         {/* Background Overlay */}
         <div className="absolute inset-0 bg-customBlue bg-opacity-50"></div>
@@ -78,7 +78,7 @@ const FAQSection = () => {
       <div
         className="relative bg-cover bg-center min-h-full"
         style={{
-          backgroundImage: `url(${water1})`,
+          backgroundImage: `url(${waterImage})`,
         }}
       >
         {/* Colored Overlay */}

@@ -1,5 +1,5 @@
 import React from "react"
-import me7 from "../images/5.jpg"
+import logoBackImage from "../images/logoBack.jpeg"
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
         <div
           className="col-span-1 bg-cover bg-bottom flex items-center justify-center"
           style={{
-            backgroundImage: `url(${me7})`,
+            backgroundImage: `url(${logoBackImage})`,
           }}
         >
           <div className="p-4 sm:p-6 md:p-8 h-full w-full flex flex-col items-center justify-center">

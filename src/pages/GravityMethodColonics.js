@@ -1,6 +1,6 @@
 import React from "react"
-import lena6Image from "../images/lena6.jpeg"
-import lena1Image from "../images/lena1.jpeg"
+import lenaHandImage from "../images/lenaHand.jpeg"
+import lenaPrepImage from "../images/lenaPrep.jpeg"
 import {
   FaWind,
   FaToiletPaper,
@@ -20,7 +20,7 @@ const GravityMethodColonics = () => {
           <div
             className="bg-cover bg-center h-auto"
             style={{
-              backgroundImage: `url(${lena6Image})`,
+              backgroundImage: `url(${lenaHandImage})`,
             }}
           >
             <div className="bg-customLigterBlue bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
@@ -50,7 +50,7 @@ const GravityMethodColonics = () => {
           <div
             className="bg-cover bg-center h-full sm:min-h-[70vh] min-h-[50vh]"
             style={{
-              backgroundImage: `url(${lena1Image})`,
+              backgroundImage: `url(${lenaPrepImage})`,
             }}
           ></div>
         </div>

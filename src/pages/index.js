@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import me from "../images/mem.jpg"
+import bellyImage from "../images/belly.jpeg"
 import lenaImage from "../images/lena.jpeg"
-import lena4Image from "../images/lena4.jpeg"
+import roomImage from "../images/room.jpeg"
 import { FaFeather, FaGem } from "react-icons/fa"
 import { FaChildReaching } from "react-icons/fa6"
 import { GiCheckMark } from "react-icons/gi"
@@ -13,7 +13,7 @@ const HomePage = () => (
     <section
       className="relative min-h-[70vh] h-full sm:mx-20 mb-20 sm:bg-cover bg-auto bg-left-top flex sm:flex-row flex-col-reverse sm:items-stretch text-customDarkGreen"
       style={{
-        backgroundImage: `url(${me})`,
+        backgroundImage: `url(${bellyImage})`,
       }}
     >
       {/* Left Section - Text */}
@@ -47,7 +47,7 @@ const HomePage = () => (
       <div
         className="w-full sm:w-[62%] bg-cover bg-center p-6 sm:p-12 flex justify-left items-center flex-grow sm:h-auto h-[30vh]"
         style={{
-          backgroundImage: `url(${me})`,
+          backgroundImage: `url(${bellyImage})`,
         }}
       >
         <h1 className="text-lg sm:text-4xl font-bold leading-snug self-left">
@@ -132,7 +132,7 @@ const HomePage = () => (
       <div
         className="bg-cover bg-center min-h-[50vh] sm:min-h-[70vh] flex items-center justify-center"
         style={{
-          backgroundImage: `url(${lena4Image})`,
+          backgroundImage: `url(${roomImage})`,
         }}
       >
         <div className="bg-customPink bg-opacity-70 p-4 sm:p-6 md:p-8 text-customDarkGreen w-full h-full flex flex-col items-center justify-center">

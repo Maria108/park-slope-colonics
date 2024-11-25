@@ -1,17 +1,40 @@
 import React from "react"
-import logoBackImage from "../images/logoBack.jpeg"
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Contact = () => {
+  // Query the image using Gatsby's GraphQL
+  const data = useStaticQuery(graphql`
+    query {
+      logoBackImage: file(relativePath: { eq: "logoBack.jpeg" }) {
+        childImageSharp {
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+    }
+  `)
+
+  // Get the optimized image
+  const backgroundImage = getImage(data.logoBackImage)
+
   return (
     <section className="text-customDarkGreen sm:mx-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 h-auto sm:h-[70vh] h-[50vh]">
         {/* Left Section - Contact Details */}
-        <div
-          className="col-span-1 bg-cover bg-bottom flex items-center justify-center"
-          style={{
-            backgroundImage: `url(${logoBackImage})`,
-          }}
-        >
+        <div className="col-span-1 relative">
+          <GatsbyImage
+            image={backgroundImage}
+            alt="Background"
+            className="absolute inset-0 w-full h-full z-[-1]" // Covers the entire div
+            imgStyle={{
+              objectFit: "cover", // Ensures it covers the div
+              objectPosition: "bottom", // Aligns to the bottom
+            }}
+          />
           <div className="p-4 sm:p-6 md:p-8 h-full w-full flex flex-col items-center justify-center">
             <div className="break-words whitespace-normal">
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-center">

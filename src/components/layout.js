@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { useLocation } from "@reach/router" // Import useLocation
 import Footer from "./Footer"
 import logoImg from "../images/logos.png"
 
@@ -14,44 +15,73 @@ const Layout = ({ children }) => {
     }
   `)
 
-  // State to control hamburger menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  // Toggle the menu open/closed
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
+  const location = useLocation() // Get the current location
+  const currentPath = location.pathname
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* NavBar */}
       <header className="bg-white text-customDarkBlue font-comfortaa border-b-2 border-customDarkBlue sm:mx-20">
         <nav className="container mx-auto sm:px-0 px-6 flex justify-between items-center py-6">
-          {/* Left: Dynamic Site Title */}
           <div className="flex items-center">
-            <img
-              src={logoImg}
-              alt="Site Logo"
-              className="h-8 mr-4" // Adjust size as needed
-            />
+            <img src={logoImg} alt="Site Logo" className="h-8 mr-4" />
             <h1 className="text-2xl font-bold">
               <Link to="/">{data.site.siteMetadata.title}</Link>
             </h1>
           </div>
 
-          {/* Right: Nav Links for Large Screens */}
           <div className="hidden md:flex space-x-4 items-center">
-            <Link to="/" className="hover:text-gray-800">
+            <Link
+              to="/"
+              className={`${
+                currentPath === "/"
+                  ? "text-gray-800 font-bold"
+                  : "hover:text-gray-800"
+              }`}
+            >
               Home
             </Link>
-            <Link to="/gravity-method" className="hover:text-gray-800">
+            <Link
+              to="/gravity-method"
+              className={`${
+                currentPath === "/gravity-method/"
+                  ? "text-gray-800 font-bold"
+                  : "hover:text-gray-800"
+              }`}
+            >
               Details
             </Link>
-            <Link to="/pricing-page" className="hover:text-gray-800">
+            <Link
+              to="/pricing-page"
+              className={`${
+                currentPath === "/pricing-page/"
+                  ? "text-gray-800 font-bold"
+                  : "hover:text-gray-800"
+              }`}
+            >
               Prep
             </Link>
-            <Link to="/faq-page" className="hover:text-gray-800">
+            <Link
+              to="/faq-page"
+              className={`${
+                currentPath === "/faq-page/"
+                  ? "text-gray-800 font-bold"
+                  : "hover:text-gray-800"
+              }`}
+            >
               FAQ
             </Link>
-            <Link to="/contact-page" className="hover:text-gray-800">
+            <Link
+              to="/contact-page"
+              className={`${
+                currentPath === "/contact-page/"
+                  ? "text-gray-800 font-bold"
+                  : "hover:text-gray-800"
+              }`}
+            >
               Contact
             </Link>
             <a
@@ -64,7 +94,6 @@ const Layout = ({ children }) => {
             </a>
           </div>
 
-          {/* Hamburger Icon for Small Screens */}
           <div
             className="md:hidden flex items-center"
             onClick={toggleMenu}
@@ -97,23 +126,57 @@ const Layout = ({ children }) => {
           </div>
         </nav>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-white shadow-lg">
             <div className="space-y-4 py-4 text-center">
-              <Link to="/" className="block hover:text-gray-400">
+              <Link
+                to="/"
+                className={`block ${
+                  currentPath === "/"
+                    ? "text-gray-800 font-bold"
+                    : "hover:text-gray-800"
+                }`}
+              >
                 Home
               </Link>
-              <Link to="/gravity-method" className="block hover:text-gray-400">
+              <Link
+                to="/gravity-method"
+                className={`block ${
+                  currentPath === "/gravity-method/"
+                    ? "text-gray-800 font-bold"
+                    : "hover:text-gray-800"
+                }`}
+              >
                 Details
               </Link>
-              <Link to="/pricing-page" className="block hover:text-gray-400">
+              <Link
+                to="/pricing-page"
+                className={`block ${
+                  currentPath === "/pricing-page/"
+                    ? "text-gray-800 font-bold"
+                    : "hover:text-gray-800"
+                }`}
+              >
                 Prep
               </Link>
-              <Link to="/faq-page" className="block hover:text-gray-400">
+              <Link
+                to="/faq-page"
+                className={`block ${
+                  currentPath === "/faq-page/"
+                    ? "text-gray-800 font-bold"
+                    : "hover:text-gray-800"
+                }`}
+              >
                 FAQ
               </Link>
-              <Link to="/contact-page" className="block hover:text-gray-400">
+              <Link
+                to="/contact-page"
+                className={`block ${
+                  currentPath === "/contact-page/"
+                    ? "text-gray-800 font-bold"
+                    : "hover:text-gray-800"
+                }`}
+              >
                 Contact
               </Link>
               <a

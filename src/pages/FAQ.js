@@ -56,8 +56,8 @@ const FAQSection = () => {
         <div className="absolute inset-0 bg-customBlue bg-opacity-50"></div>
 
         {/* FAQ Content */}
-        <div className="relative z-10 p-6 sm:p-12 text-customDarkGreen bg-white bg-opacity-80">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-customDarkGreen">
+        <div className="relative z-10 p-6 sm:p-12 bg-white bg-opacity-80">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
             Frequently Asked Questions
           </h2>
           <div className="space-y-1">

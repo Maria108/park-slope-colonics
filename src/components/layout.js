@@ -194,7 +194,9 @@ const Layout = ({ children }) => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow font-comfortaa">{children}</main>
+      <main className="flex-grow font-comfortaa text-customDarkGreen">
+        {children}
+      </main>
 
       {/* Footer */}
       <Footer />

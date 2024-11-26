@@ -11,7 +11,7 @@ import { FiCloudSnow, FiCloudLightning } from "react-icons/fi"
 
 const GravityMethodColonics = () => {
   return (
-    <main className="text-customDarkGreen">
+    <main>
       {/* First Section */}
       <section className="mb-20 sm:mx-20">
         <div className="grid grid-cols-1 md:grid-cols-2">
@@ -22,7 +22,7 @@ const GravityMethodColonics = () => {
               backgroundImage: `url(${lenaHandImage})`,
             }}
           >
-            <div className="bg-customLigterBlue bg-opacity-70 flex items-center justify-center px-8 sm:px-8 text-customDarkGreen h-full">
+            <div className="bg-customLigterBlue bg-opacity-70 flex items-center justify-center px-8 sm:px-8 h-full">
               <div className="max-w-md my-5">
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">
                   About Your Colonic Session
@@ -78,48 +78,40 @@ const GravityMethodColonics = () => {
             {
               title: "Fatigue",
               icon: (
-                <IoCloudyNightOutline className="inline-block mx-2 text-customDarkGreen text-3xl" />
+                <IoCloudyNightOutline className="inline-block mx-2 text-3xl" />
               ),
               description:
                 "Bloating and a congested colon can contribute to feelings of fatigue. When the digestive system is burdened with excess waste, it may impact overall energy levels. Addressing these issues can be a step towards revitalizing your well-being. In a decade of practice, clients often report heightened energy and occasional sleep restoration post-colonic.",
             },
             {
               title: "Bloating",
-              icon: (
-                <FiWind className="inline-block mx-2 text-customDarkGreen text-3xl" />
-              ),
+              icon: <FiWind className="inline-block mx-2 text-3xl" />,
               description:
                 "Bloating is one of the top concerns clients mention when they come for colonic sessions. This isn't surprising, given that bloating is often linked to factors like stress, overeating, food intolerances, medication, lack of movement, and frequent travel—common challenges in the bustling life of New York. Addressing bloating in my practice, I consistently witness immediate relief during a session. Whether pursued independently or as part of a comprehensive health plan, colonics compliment balanced diets, exercise, and medical recommendations for a holistic approach to well-being.",
             },
             {
               title: "Constipation",
               icon: (
-                <IoCloudOfflineOutline className="inline-block mx-2 text-customDarkGreen text-3xl" />
+                <IoCloudOfflineOutline className="inline-block mx-2 text-3xl" />
               ),
               description:
                 "Constipation is frustrating. Often caused by factors such as low fiber, dehydration, medication, and lack of movement, it’s a widespread concern. Colon hydrotherapy provides a highly effective and straightforward solution for relieving constipation and eliminating toxic buildup. In many scenarios, a single session can promptly restore regular bowel movements—whether rebounding after travel, adjusting to new medications, or navigating short-term stressors like staying at your new boyfriend's house.",
             },
             {
               title: "Skin Issues",
-              icon: (
-                <FiCloudSnow className="inline-block mx-2 text-customDarkGreen text-3xl" />
-              ),
+              icon: <FiCloudSnow className="inline-block mx-2 text-3xl" />,
               description:
                 "As someone who battled acne and psoriasis, I discovered that colonics played a crucial role in my skin journey. Health practitioners and advocates of colon hydrotherapy universally recognize the essential link between a healthy colon and well-functioning elimination organs for achieving clear and beautiful skin. Skin condition often mirrors colon health. While regular colonic sessions and a clean diet can contribute to relieving issues like acne, psoriasis, and eczema, achieving clear skin involves a mix of factors. In some cases, I've witnessed a single colonic session providing an immediate radiant glow to the skin.",
             },
             {
               title: "Feeling Heavy/Sluggish",
-              icon: (
-                <IoCloudy className="inline-block mx-2 text-customDarkGreen text-3xl" />
-              ),
+              icon: <IoCloudy className="inline-block mx-2 text-3xl" />,
               description:
                 "Feeling sluggish, frequently battling colds, flu, or allergies, and experiencing cravings for sugary foods are signs that your body may benefit from a cleanse or detox. Colon hydrotherapy offers an effective starting point. Many clients report feeling lighter, more energized, less bloated, with an uplifted and happier demeanor after just one session or a series of treatments.",
             },
             {
               title: "Headache",
-              icon: (
-                <FiCloudLightning className="inline-block mx-2 text-customDarkGreen text-3xl" />
-              ),
+              icon: <FiCloudLightning className="inline-block mx-2 text-3xl" />,
               description:
                 "Headaches and brain fog often signal an overload of impurities in the body. If your headache isn't linked to tight neck muscles, dehydration, or stress, it might be time for a colonic. Eliminating unwanted waste from your colon will effectively address this concern. In my practice, I consistently hear feedback that brain fog disappears after colonic sessions. Nourishing your cells with nutrient-dense foods, free from the burden of processed foods, sugars, fats, and heavy proteins, can lead to improved brain function and clarity.",
             },

@@ -5,7 +5,7 @@ import { GoStop } from "react-icons/go"
 
 const Preparation = () => {
   return (
-    <section className="sm:mx-20 text-customDarkGreen">
+    <section className="sm:mx-20">
       <div className="grid grid-cols-1 sm:grid-cols-3">
         {/* Left Section - Image */}
         <div
@@ -17,7 +17,7 @@ const Preparation = () => {
 
         {/* Right Section - Background with Text Overlay */}
         <div
-          className="relative sm:col-span-2 bg-cover bg-center text-white flex items-center"
+          className="relative sm:col-span-2 bg-cover bg-center flex items-center"
           style={{
             backgroundImage: `url(${preps})`,
           }}
@@ -26,7 +26,7 @@ const Preparation = () => {
           <div className="absolute inset-0 bg-customLigterBlue bg-opacity-90"></div>
 
           {/* Text Content */}
-          <div className="relative z-10 p-6 sm:p-14 text-customDarkGreen w-full">
+          <div className="relative z-10 p-6 sm:p-14 w-full">
             <h2 className="text-2xl sm:text-3xl font-bold mb-5 text-center">
               How To Prepare
             </h2>

@@ -10,17 +10,17 @@ const HomePage = () => (
   <Layout>
     {/* Hero Section */}
     <section
-      className="relative min-h-[70vh] h-full sm:mx-20 mb-20 sm:bg-cover bg-auto bg-left-top flex sm:flex-row flex-col-reverse sm:items-stretch text-customDarkGreen"
+      className="relative min-h-[70vh] h-full xl:mx-20 mb-20 xl:bg-cover bg-auto bg-left-top flex xl:flex-row flex-col-reverse xl:items-stretch"
       style={{
         backgroundImage: `url(${bellyImage})`,
       }}
     >
       {/* Left Section - Text */}
-      <div className="w-full sm:w-[38%] bg-white bg-opacity-70 p-6 sm:p-12 flex flex-col justify-center">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center">
+      <div className="w-full xl:w-[38%] bg-white bg-opacity-70 p-6 xl:p-12 flex flex-col justify-center">
+        <h2 className="text-2xl xl:text-3xl font-bold mb-4 text-center">
           Colon Hydrotherapy
         </h2>
-        <p className="text-sm sm:text-base leading-relaxed mb-6 mx-4 indent-6">
+        <p className="text-sm xl:text-base leading-relaxed mb-6 mx-4 indent-6">
           Discover a gentle yet powerful way to support your body’s natural
           detoxification and digestive health. Colon hydrotherapy isn’t just
           about cleansing—it’s about restoring balance, easing discomfort, and
@@ -29,7 +29,7 @@ const HomePage = () => (
           looking for relief or proactive wellness, we’re here to help you feel
           your best.
         </p>
-        <p className="text-sm sm:text-base font-comfortaaBold mb-4 ml-4">
+        <p className="text-sm xl:text-base font-comfortaaBold mb-4 ml-4">
           One Colonic Session (45-60 mins) - $150
         </p>
         <a
@@ -44,14 +44,14 @@ const HomePage = () => (
 
       {/* Right Section - Slogan */}
       <div
-        className="w-full sm:w-[62%] bg-cover bg-center p-6 sm:p-12 flex justify-left items-center flex-grow sm:h-auto h-[30vh]"
+        className="w-full xl:w-[62%] bg-cover bg-center p-6 xl:p-12 flex justify-left items-center flex-grow xl:h-auto h-[30vh]"
         style={{
           backgroundImage: `url(${bellyImage})`,
         }}
       >
-        <h1 className="text-lg sm:text-4xl font-bold leading-snug self-left">
+        <h1 className="text-lg md:text-4xl font-bold leading-snug self-left">
           Let go of what weighs you down <br />{" "}
-          <span className="sm:pl-16 pl-10">with Park Slope Colonics</span>
+          <span className="xl:pl-16 pl-10">with Park Slope Colonics</span>
         </h1>
       </div>
     </section>
@@ -60,7 +60,7 @@ const HomePage = () => (
     <TreatmentBenefitsSection />
 
     {/* Meet Your Therapist */}
-    <section className="my-10 sm:mx-20 grid grid-cols-1 md:grid-cols-2 text-customDarkGreen">
+    <section className="my-10 sm:mx-20 grid grid-cols-1 md:grid-cols-2">
       {/* Left Background Image */}
       <div
         className="bg-cover bg-center min-h-[50vh] sm:min-h-[70vh]"
@@ -76,7 +76,7 @@ const HomePage = () => (
           backgroundImage: `url(${roomImage})`,
         }}
       >
-        <div className="bg-customPink bg-opacity-70 p-4 sm:p-6 md:p-8 text-customDarkGreen w-full h-full flex flex-col items-center justify-center">
+        <div className="bg-customPink bg-opacity-70 p-4 sm:p-6 md:p-8 w-full h-full flex flex-col items-center justify-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl text-center font-bold mb-4 break-words">
             Meet Your Therapist
           </h2>

@@ -3,7 +3,7 @@ import logoBackImage from "../images/logoBack.jpeg"
 
 const Contact = () => {
   return (
-    <section className="text-customDarkGreen sm:mx-20">
+    <section className="sm:mx-20">
       <div className="grid grid-cols-1 lg:grid-cols-3 h-auto sm:h-[70vh] h-[50vh]">
         {/* Left Section - Contact Details */}
         <div

@@ -39,7 +39,7 @@ const reviews = [
 
 const ReviewsSection = () => {
   return (
-    <section className="h-auto my-20 sm:mx-8 px-8 text-customDarkGreen">
+    <section className="h-auto my-20 sm:mx-8 px-8">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
         Here Are Few of 50+ Reviews From Google
       </h2>

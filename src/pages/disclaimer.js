@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const DisclaimerPage = () => (
   <Layout>
-    <div className="container mx-auto px-4 py-8 text-customDarkGreen">
+    <div className="container mx-auto px-4 py-8">
       <h1 className="text-2xl font-bold mb-6 text-center">Disclaimer</h1>
       <ol className="list-decimal pl-6 space-y-4 text-left">
         <li>

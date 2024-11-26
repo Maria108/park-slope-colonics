@@ -43,7 +43,7 @@ const TreatmentBenefitsSection = () => {
   ]
 
   return (
-    <section className="my-20 px-8 max-w-6xl mx-auto text-customDarkGreen">
+    <section className="my-20 px-8 max-w-6xl mx-auto">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
         What Will You Get Out of the Treatment
       </h2>

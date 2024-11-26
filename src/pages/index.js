@@ -10,7 +10,7 @@ const HomePage = () => (
   <Layout>
     {/* Hero Section */}
     <section
-      className="relative min-h-[70vh] h-full xl:mx-20 mb-20 xl:bg-cover bg-auto bg-left-top flex xl:flex-row flex-col-reverse xl:items-stretch"
+      className="relative min-h-[70vh] h-full sm:mx-20 mb-20 xl:bg-cover bg-auto bg-left-top flex xl:flex-row flex-col-reverse xl:items-stretch"
       style={{
         backgroundImage: `url(${bellyImage})`,
       }}

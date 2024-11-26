@@ -5,8 +5,6 @@ module.exports = {
     extend: {
       colors: {
         customBlue: "#ABC8DE",
-        customLigtBlue: "#d5e3ef",
-        customLigtererBlue: "#e5edf5",
         customLigterBlue: "#e8eff6",
         customDarkBlue: "#829cae",
         customGreen: "#B5C0AC",

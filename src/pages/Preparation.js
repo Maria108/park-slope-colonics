@@ -3,7 +3,7 @@ import preps from "../images/glass.jpg"
 import { GiCheckMark } from "react-icons/gi"
 import { GoStop } from "react-icons/go"
 
-const PricingPreparationFAQ = () => {
+const Preparation = () => {
   return (
     <section className="sm:mx-20 text-customDarkGreen">
       <div className="grid grid-cols-1 sm:grid-cols-3">
@@ -82,4 +82,4 @@ const PricingPreparationFAQ = () => {
   )
 }
 
-export default PricingPreparationFAQ
+export default Preparation

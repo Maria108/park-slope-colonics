@@ -1,14 +1,14 @@
 // src/pages/pricing-page.js
 import React from "react"
 import Layout from "../components/layout"
-import PricingPreparationFAQ from "./PricingPreparationFAQ"
+import Preparation from "./Preparation"
 
-const PricingPreparationFAQPage = () => {
+const PreparationPage = () => {
   return (
     <Layout>
-      <PricingPreparationFAQ />
+      <Preparation />
     </Layout>
   )
 }
 
-export default PricingPreparationFAQPage
+export default PreparationPage

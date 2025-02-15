@@ -19,7 +19,7 @@ const Contact = () => {
               </h2>
               <div className="grid grid-cols-[1fr_2fr] gap-x-4 gap-y-2 text-sm sm:text-base">
                 <span className="text-right font-comfortaaBold">Address:</span>
-                <span>313 7th St, Brooklyn, NY, 11215</span>
+                <span>516 3rd Ave, Brooklyn, NY, 11215</span>
 
                 <span className="text-right font-comfortaaBold">Phone:</span>
                 <span>646-385-9985 (text or call)</span>
@@ -49,7 +49,7 @@ const Contact = () => {
         {/* Right Section - Google Map */}
         <div className="col-span-2 h-[calc(50vh-4rem)] sm:h-[50vh] md:h-full">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.843575716129!2d-73.98816832429223!3d40.669789345136576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a37b1c93d05%3A0x2dbf2459af29eb2!2s313%207th%20St%2C%20Brooklyn%2C%20NY%2011215%2C%20USA!5e0!3m2!1sen!2sin!4v1698000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.7899945628654!2d-73.9905205242921!3d40.670965245080996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3783775d6d%3A0xeed2e8f48e81d9d5!2s516%203rd%20Ave%2C%20Brooklyn%2C%20NY%2011215%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
             title="Google map"
             width="100%"
             height="100%"

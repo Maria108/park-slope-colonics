@@ -8,6 +8,36 @@ import TreatmentBenefitsSection from "../components/TreatmentBenefitsSection"
 
 const HomePage = () => (
   <Layout>
+    {/* Temporary Price Update Notice (appears right after nav) */}
+    <section className="px-4 sm:px-6 md:px-8 py-6 sm:py-8">
+      <div className="max-w-2xl mx-auto">
+        <h2 className="text-xl sm:text-2xl font-comfortaaBold text-center mb-4">
+          Upcoming Price Update
+        </h2>
+    
+        <p className="text-sm sm:text-base leading-relaxed mb-4">
+          To continue providing you with the highest level of care in our new, spacious office,
+          the session rate for Colon Hydrotherapy will increase to{" "}
+          <span className="font-comfortaaBold">$175 starting Monday, September 8</span>.
+        </p>
+    
+        <p className="text-sm sm:text-base leading-relaxed mb-4">
+          Even with this adjustment, our sessions remain below the average rates in New York City.
+          This new rate reflects the improvements made over the past year and the quality of care
+          and environment you’ve come to love.
+        </p>
+    
+        <p className="text-sm sm:text-base leading-relaxed mb-4">
+          Sessions booked before September 8 will be honored at the current rate of{" "}
+          <span className="font-comfortaaBold">$150</span>.
+        </p>
+    
+        <p className="text-sm sm:text-base leading-relaxed">
+          Thank you for your trust and support — it’s truly an honor to be part of your wellness journey.
+        </p>
+      </div>
+    </section>
+
     {/* Hero Section */}
     <section
       className="relative min-h-[70vh] h-full sm:mx-20 mb-20 xl:bg-cover bg-auto bg-left-top flex xl:flex-row flex-col-reverse xl:items-stretch"

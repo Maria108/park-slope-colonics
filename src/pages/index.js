@@ -12,7 +12,7 @@ const HomePage = () => (
     <section className="px-4 sm:px-6 md:px-8 py-6 sm:py-8">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-xl sm:text-2xl font-comfortaaBold text-center mb-4">
-          Upcoming Price Update
+          Upcoming Price Update & Location Reminder
         </h2>
     
         <p className="text-sm sm:text-base leading-relaxed mb-4">
@@ -25,6 +25,10 @@ const HomePage = () => (
           Even with this adjustment, our sessions remain below the average rates in New York City.
           This new rate reflects the improvements made over the past year and the quality of care
           and environment you’ve come to love.
+        </p>
+
+        <p className="text-sm sm:text-base leading-relaxed mb-4">
+          <span className="font-comfortaaBold">Our new location:</span> 516 3rd Ave, Brooklyn, NY 11215 — street-level storefront
         </p>
     
         <p className="text-sm sm:text-base leading-relaxed mb-4">

@@ -5,6 +5,7 @@ import lenaImage from "../images/lena.jpeg"
 import roomImage from "../images/room.jpeg"
 import ReviewsSection from "../components/ReviewsSection"
 import TreatmentBenefitsSection from "../components/TreatmentBenefitsSection"
+import { FaMapPin } from "react-icons/fa";
 
 const HomePage = () => (
   <Layout>
@@ -16,8 +17,14 @@ const HomePage = () => (
         </h2>
     
         <p className="text-sm sm:text-base leading-relaxed mb-4">
-          I’m now welcoming clients in a new, spacious office at:{' '}
-          <span className="font-comfortaaBold">516 3rd Ave, Brooklyn, NY 11215 — street-level storefront</span>.
+          I’m now welcoming clients in a <span className="font-comfortaaBold">new, spacious office</span> at:
+          <br />
+          <span className="inline-flex items-baseline gap-1">
+            <FaMapPin className="text-red-500" />
+            <span className="font-comfortaaBold">
+              516 3rd Ave, Brooklyn, NY 11215 — street-level storefront
+            </span>.
+          </span>
         </p>
     
         <p className="text-sm sm:text-base leading-relaxed mb-4">

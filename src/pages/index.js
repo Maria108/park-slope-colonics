@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import bellyImage from "../images/belly.jpeg"
 import lenaImage from "../images/lena.jpeg"
+import lenaNewImage from "../images/lenaNew.jpg"
 import roomImage from "../images/room.jpeg"
 import ReviewsSection from "../components/ReviewsSection"
 import TreatmentBenefitsSection from "../components/TreatmentBenefitsSection"
@@ -19,6 +20,9 @@ const HomePage = () => (
         <p className="text-sm sm:text-base leading-relaxed mb-4">
           I’m now welcoming clients in a <span className="font-comfortaaBold">new, spacious office</span> at:
           <br />
+        </p>
+
+        <p className="text-sm sm:text-base leading-relaxed mb-4">
           <span className="inline-flex items-baseline gap-1">
             <FaMapPin className="text-red-500" />
             <span className="font-comfortaaBold">
@@ -92,9 +96,11 @@ const HomePage = () => (
     <section className="my-10 sm:mx-20 grid grid-cols-1 md:grid-cols-2">
       {/* Left Background Image */}
       <div
-        className="bg-cover bg-center min-h-[50vh] sm:min-h-[70vh]"
+        className="bg-no-repeat min-h-[50vh] sm:min-h-[70vh]"
         style={{
-          backgroundImage: `url(${lenaImage})`,
+          backgroundImage: `url(${lenaNewImage})`,
+          backgroundPosition: 'right bottom',
+          backgroundSize: 'auto',
         }}
       ></div>
 

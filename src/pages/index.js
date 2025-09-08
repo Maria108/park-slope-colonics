@@ -96,11 +96,9 @@ const HomePage = () => (
     <section className="my-10 sm:mx-20 grid grid-cols-1 md:grid-cols-2">
       {/* Left Background Image */}
       <div
-        className="bg-no-repeat min-h-[50vh] sm:min-h-[70vh]"
+        className="bg-cover sm:bg-auto bg-no-repeat min-h-[50vh] sm:min-h-[70vh] bg-center sm:bg-[right_bottom]"
         style={{
           backgroundImage: `url(${lenaNewImage})`,
-          backgroundPosition: 'right bottom',
-          backgroundSize: 'auto',
         }}
       ></div>
 

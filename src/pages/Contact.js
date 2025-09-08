@@ -30,7 +30,8 @@ const Contact = () => {
                 <span className="text-right font-comfortaaBold">Hours:</span>
                 <span>
                   Mon-Tue 2:30PM - 8PM <br />
-                  Wed-Fri 8AM - 8PM
+                  Wed-Fri 8AM - 8PM <br />
+                  Sat-Sun 9AM - 3PM
                 </span>
               </div>
             </div>

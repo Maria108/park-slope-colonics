@@ -50,7 +50,6 @@ const TreatmentBenefitsSection = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 text-center">
         {benefitsData.map((item, idx) => (
           <div key={idx} className="text-center">
-            {item.icon}
             <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
             <ul className="list-none mx-auto inline-block text-left mt-2">
               {item.benefits.map((benefit, i) => (

@@ -12,31 +12,19 @@ const HomePage = () => (
     <section className="px-4 sm:px-6 md:px-8 py-6 sm:py-8">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-xl sm:text-2xl font-comfortaaBold text-center mb-4">
-          Upcoming Price Update & Location Reminder
+          New Location Update
         </h2>
     
         <p className="text-sm sm:text-base leading-relaxed mb-4">
-          To continue providing you with the highest level of care in our new, spacious office,
-          the session rate for Colon Hydrotherapy will increase to{" "}
-          <span className="font-comfortaaBold">$175 starting Monday, September 8</span>.
+          I’m now welcoming clients in a new, spacious office at:{' '}
+          <span className="font-comfortaaBold">516 3rd Ave, Brooklyn, NY 11215 — street-level storefront</span>.
         </p>
     
         <p className="text-sm sm:text-base leading-relaxed mb-4">
-          Even with this adjustment, our sessions remain below the average rates in New York City.
-          This new rate reflects the improvements made over the past year and the quality of care
-          and environment you’ve come to love.
-        </p>
-
-        <p className="text-sm sm:text-base leading-relaxed mb-4">
-          <span className="font-comfortaaBold">Our new location:</span> 516 3rd Ave, Brooklyn, NY 11215 — street-level storefront
+          The new space is just a short walk from the previous location, right here in the same neighborhood.
         </p>
     
         <p className="text-sm sm:text-base leading-relaxed mb-4">
-          Sessions booked before September 8 will be honored at the current rate of{" "}
-          <span className="font-comfortaaBold">$150</span>.
-        </p>
-    
-        <p className="text-sm sm:text-base leading-relaxed">
           Thank you for your trust and support — it’s truly an honor to be part of your wellness journey.
         </p>
       </div>
@@ -64,7 +52,7 @@ const HomePage = () => (
           your best.
         </p>
         <p className="text-sm xl:text-base font-comfortaaBold mb-4 ml-4">
-          One Colonic Session (45-60 mins) - $150
+          One Colonic Session (45-60 mins) - $175
         </p>
         <a
           href="https://square.site/book/B5H65JGC5J9Y9/park-slope-colonics-brooklyn-ny"

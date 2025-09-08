@@ -1,6 +1,9 @@
 import React from "react"
 import lenaHandImage from "../images/lenaHand.jpeg"
 import lenaPrepImage from "../images/lenaPrep.jpeg"
+import office1Image from "../images/office1.jpg"
+import office2Image from "../images/office2.jpg"
+import office3Image from "../images/office3.jpg"
 import {
   IoCloudyNightOutline,
   IoCloudy,
@@ -130,6 +133,23 @@ const GravityMethodColonics = () => {
           ))}
         </div>
       </section>
+
+      {/* My Space Section */}
+      <section className="my-20 mx-5 sm:mx-20">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-12 text-center">
+          The Space
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+          {[office1Image, office2Image, office3Image].map((img, i) => (
+            <div
+              key={i}
+              className="rounded-md shadow-lg overflow-hidden h-[300px] sm:h-[400px] lg:h-[500px] bg-cover bg-center"
+              style={{ backgroundImage: `url(${img})` }}
+            ></div>
+          ))}
+        </div>
+      </section>
+
     </main>
   )
 }

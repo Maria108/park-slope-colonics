@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import bellyImage from "../images/belly.jpeg"
 import lenaImage from "../images/lena.jpeg"
-import lenaNewImage from "../images/lenaNew.jpg"
+import lenaNewImage from "../images/lenaNew2.jpg"
 import roomImage from "../images/room.jpeg"
 import ReviewsSection from "../components/ReviewsSection"
 import TreatmentBenefitsSection from "../components/TreatmentBenefitsSection"
@@ -96,7 +96,7 @@ const HomePage = () => (
     <section className="my-10 sm:mx-20 grid grid-cols-1 md:grid-cols-2">
       {/* Left Background Image */}
       <div
-        className="bg-cover sm:bg-auto bg-no-repeat min-h-[50vh] sm:min-h-[70vh] bg-center sm:bg-[right_bottom]"
+        className="bg-cover sm:bg-auto bg-no-repeat min-h-[50vh] sm:min-h-[70vh] bg-[center_80%] sm:bg-[right_bottom]"
         style={{
           backgroundImage: `url(${lenaNewImage})`,
         }}

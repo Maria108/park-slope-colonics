@@ -11,36 +11,6 @@ import { FaMapPin } from "react-icons/fa";
 
 const HomePage = () => (
   <Layout>
-    {/* Temporary Price Update Notice (appears right after nav) */}
-    <section className="px-4 sm:px-6 md:px-8 py-6 sm:py-8">
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-xl sm:text-2xl font-comfortaaBold text-center mb-4">
-          New Location Update
-        </h2>
-    
-        <p className="text-sm sm:text-base leading-relaxed mb-4">
-          I'm now welcoming clients in a <span className="font-comfortaaBold">new, spacious office</span> at:
-          <br />
-        </p>
-
-        <p className="text-sm sm:text-base leading-relaxed mb-4">
-          <span className="inline-flex items-baseline gap-1">
-            <FaMapPin className="text-red-500" />
-            <span className="font-comfortaaBold">
-              516 3rd Ave, Brooklyn, NY 11215 — street-level storefront
-            </span>.
-          </span>
-        </p>
-    
-        <p className="text-sm sm:text-base leading-relaxed mb-4">
-          The new space is just a short walk from the previous location, right here in the same neighborhood.
-        </p>
-    
-        <p className="text-sm sm:text-base leading-relaxed mb-4">
-          Thank you for your trust and support — it's truly an honor to be part of your wellness journey.
-        </p>
-      </div>
-    </section>
 
     {/* Hero Section */}
     <section

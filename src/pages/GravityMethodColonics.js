@@ -25,36 +25,39 @@ const GravityMethodColonics = () => {
               backgroundImage: `url(${lenaHandImage})`,
             }}
           >
-            <div className="bg-customLigterBlue bg-opacity-70 flex items-center justify-center px-8 sm:px-8 h-full">
-              <div className="max-w-md my-5">
+            <div className="bg-customLigterBlue bg-opacity-70 flex items-center justify-center px-4 sm:px-6 md:px-24 h-full">
+              <div className="my-5">
                 <h2 className="text-2xl sm:text-3xl font-bold text-center">
                   About Your Colonic Session
                 </h2>
-                <div className="mt-4 text-sm sm:text-base text-left">
+                <div className="mt-4 text-sm sm:text-base text-left space-y-3">
                   <p className="indent-6">
-                    A colonic, or colon hydrotherapy, is a natural and gentle
-                    cleanse of the colon (large intestine) using warm, purified
-                    water. In my private practice, I use the{" "}
+                    A colonic, or colon hydrotherapy, is a gentle way to
+                    cleanse the colon using warm, purified water. In my
+                    practice, I use the{" "}
                     <span className="font-comfortaaBold">Gravity Method</span>,
-                    which relies on the natural flow of water under gravity,
-                    ensuring a comfortable and pressure-free experience.
+                    which allows water to flow naturally without pressure,
+                    creating a comfortable and relaxed experience.
                   </p>
                   <p className="indent-6">
-                    Unlike other methods,{" "}
-                    <span className="font-comfortaaBold">
-                      there are no machines involved
-                    </span>
-                    , and the water flows in and out continuously, with the
-                    outflow safely directed into the sewage system ensuring both
-                    cleanliness and comfort throughout the session.
+                    When you arrive, you'll lie on a treatment table similar to
+                    a massage table. During colder months, the table is heated
+                    for added comfort. The therapist will gently introduce a
+                    sterile, lubricated speculum into the rectum. It is
+                    connected to a closed system that allows water to flow in
+                    while waste flows out directly into the plumbing.
                   </p>
                   <p className="indent-6">
-                    As the sole therapist, I provide{" "}
-                    <span className="font-comfortaaBold">
-                      one-on-one, personalized care
-                    </span>{" "}
-                    during your treatment, including a firm yet gentle abdominal
-                    massage to help facilitate the release of accumulated waste.
+                    Water is introduced slowly, creating a natural feeling of
+                    fullness. When that builds, it's released, and the colon
+                    empties. This process repeats throughout the session. You'll
+                    be on your back most of the time, while the therapist
+                    provides abdominal massage to support the process.
+                  </p>
+                  <p className="indent-6">
+                    Sessions typically last about 45 minutes, sometimes up to
+                    an hour. At the end, you'll have time to sit on the toilet
+                    to comfortably release any remaining water.
                   </p>
                 </div>
               </div>
@@ -98,7 +101,7 @@ const GravityMethodColonics = () => {
                 <IoCloudOfflineOutline className="inline-block mx-2 text-3xl" />
               ),
               description:
-                "Constipation is frustrating. Often caused by factors such as low fiber, dehydration, medication, and lack of movement, it’s a widespread concern. Colon hydrotherapy provides a highly effective and straightforward solution for relieving constipation and eliminating toxic buildup. In many scenarios, a single session can promptly restore regular bowel movements—whether rebounding after travel, adjusting to new medications, or navigating short-term stressors like staying at your new boyfriend's house.",
+                "Constipation is frustrating. Often caused by factors such as low fiber, dehydration, medication, and lack of movement, it's a widespread concern. Colon hydrotherapy provides a highly effective and straightforward solution for relieving constipation and eliminating toxic buildup. In many scenarios, a single session can promptly restore regular bowel movements—whether rebounding after travel, adjusting to new medications, or navigating short-term stressors like staying at your new boyfriend's house.",
             },
             {
               title: "Skin Issues",

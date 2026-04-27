@@ -7,7 +7,6 @@ import roomImage from "../images/room.jpeg"
 import officeImage from "../images/office5.jpeg"
 import ReviewsSection from "../components/ReviewsSection"
 import TreatmentBenefitsSection from "../components/TreatmentBenefitsSection"
-import { FaMapPin } from "react-icons/fa";
 
 const HomePage = () => (
   <Layout>
@@ -34,7 +33,10 @@ const HomePage = () => (
           your best.
         </p>
         <p className="text-sm xl:text-base font-comfortaaBold mb-4 ml-4">
-          One Colonic Session (45-60 mins) - $175
+          One Colonic Session with Elena (Founder) - $175
+        </p>
+        <p className="text-sm xl:text-base font-comfortaaBold mb-4 ml-4">
+          One Colonic Session with Jennifer – $160 <br /> (Limited time introductory rate as Jennifeer joins my practice)
         </p>
         <a
           href="https://square.site/book/B5H65JGC5J9Y9/park-slope-colonics-brooklyn-ny"

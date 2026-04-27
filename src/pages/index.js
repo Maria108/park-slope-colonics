@@ -24,19 +24,16 @@ const HomePage = () => (
           Colon Hydrotherapy
         </h2>
         <p className="text-sm xl:text-base leading-relaxed mb-6 mx-4 indent-6">
-          Discover a gentle yet powerful way to support your body's natural
-          detoxification and digestive health. Colon hydrotherapy isn't just
-          about cleansing—it's about restoring balance, easing discomfort, and
-          helping you feel your best from the inside out. Each session is
-          tailored to your needs in a calm, relaxing environment. Whether you're
-          looking for relief or proactive wellness, we're here to help you feel
-          your best.
+          Experience gentle, gravity-fed colon hydrotherapy in a calm private setting designed to support digestive comfort, regularity, and overall well-being.
         </p>
         <p className="text-sm xl:text-base font-comfortaaBold mb-4 ml-4">
-          One Colonic Session with Elena (Founder) - $175
+          Choose Your Practitioner
         </p>
-        <p className="text-sm xl:text-base font-comfortaaBold mb-4 ml-4">
-          One Colonic Session with Jennifer – $160 <br /> (Limited time introductory rate as Jennifeer joins my practice)
+        <p className="text-sm xl:text-base mb-4 ml-4">
+          <span className="font-comfortaaBold">Elena Bykova </span> <br /> Founder & Colon Hydrotherapist <br /> $175
+        </p>
+        <p className="text-sm xl:text-base mb-4 ml-4">
+          <span className="font-comfortaaBold">Jennifer Gage</span> <br /> Colon Hydrotherapist <br /> $160  • limited introductory offer
         </p>
         <a
           href="https://square.site/book/B5H65JGC5J9Y9/park-slope-colonics-brooklyn-ny"
